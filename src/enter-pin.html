@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tranxfa</title>
+
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="../src/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-50">
+      <div class="relative flex flex-col md:flex-row w-full h-screen bg-white">
+        <!-- Left Section with Full Size Image -->
+        <div class=" w-[60%] md:w-[60%] h-auto md:h-full">
+          <!-- Top Image in Mobile View -->
+          <img src="../images/new-pin.png" alt="Full Size Image"
+            class="w-full h-90 md:h-full object-cover hidden md:block">
+          <!-- Logo and Cross in Mobile View -->
+          <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
+            <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
+            <a href="index.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+                src="../images/back.png"></a>
+          </div>
+          <!-- Logo at Top Left (Desktop) -->
+          <div class="absolute top-4 left-4 hidden md:block">
+            <!-- <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a> -->
+
+          </div>
+          <!-- Cross Mark at Form Right Corner (Desktop) -->
+          <div class="hidden md:block  absolute top-4 right-4">
+            <a href="index.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+                src="../images/back.png"></a>
+          </div>
+        </div>
+
+        <!-- Form Section -->
+        <!-- Form Section -->
+        <div class="flex-1 flex items-center justify-center p-4 md:p-8">
+          <div class="w-full max-w-xl">
+            <!-- Form Header -->
+            <h2 class="text-2xl font-semibold text-black mb-4">Enter Your PIN
+            </h2>
+            <p class="text-md text-[#B7A3C1] mb-6">Pin and Password are like toothbrush, don’t let anyone else use it.
+            </p>
+
+            <!-- Form -->
+            <form action="#" method="POST" class="space-y-6 mt-12">
+              <div class="mb-2">
+                <label for="address" class="block text-sm font-medium text-purple-secondary mb-3">PIN</label>
+                <div class="flex mb-4" id="pin-input-container">
+                  <!-- First row of inputs -->
+                  <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-2 text-center"
+                    oninput="moveFocus(event, 0)" autofocus />
+                  <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-2 text-center"
+                    oninput="moveFocus(event, 1)" />
+                  <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-2 text-center"
+                    oninput="moveFocus(event, 2)" />
+                  <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-2 text-center"
+                    oninput="moveFocus(event, 3)" />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <a href="dashboard.html"
+                class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-blue-primary  transition">
+                Enable 2-Step Verification
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="../src/js/script.js"></script>
+</body>
+
+</html>

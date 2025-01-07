@@ -19,11 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const nationalityInput = document.getElementById('nationality-drop-input');
   const nationalityList = document.getElementById('nationality-drop-list');
   const nationalityFlag = document.getElementById('nationality-flag');
+  const dropdownButton = document.getElementById('dropdown-button');
+  const dropdownIcon = document.getElementById('dropdown-icon');
 
-  // Show nationality dropdown on input click
-  nationalityInput.addEventListener('click', function () {
-    nationalityList.classList.remove('hidden');
-  });
+  // Function to toggle dropdown and icon rotation
+  function toggleDropdown() {
+    nationalityList.classList.toggle('hidden');
+    dropdownIcon.classList.toggle('rotate-180');
+  }
+
+  // Show or hide the dropdown when input or icon is clicked
+  nationalityInput.addEventListener('click', toggleDropdown);
+  dropdownButton.addEventListener('click', toggleDropdown);
 
   // Select nationality and update input/flag
   window.selectNationality = function (name, flagPath) {
@@ -31,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     nationalityFlag.src = flagPath;
     nationalityFlag.classList.remove('hidden');
     nationalityList.classList.add('hidden');
+    dropdownIcon.classList.remove('rotate-180');
   };
 
   // Filter nationalities based on input
@@ -46,12 +54,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Close dropdown if clicked outside
   document.addEventListener('click', function (event) {
-    if (!nationalityList.contains(event.target) && event.target !== nationalityInput) {
+    if (!nationalityList.contains(event.target) && event.target !== nationalityInput && event.target !== dropdownIcon && event.target !== dropdownButton) {
       nationalityList.classList.add('hidden');
+      dropdownIcon.classList.remove('rotate-180');
     }
   });
 });
-
 
 const burgerMenu = document.getElementById('burger-menu');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -257,3 +265,17 @@ const swiper = new Swiper('.swiper-container', {
       },
   },
 });
+
+// *********** box-input  **************************** 
+function moveFocus(event, inputIndex) {
+  const inputs = document.querySelectorAll('#pin-input-container input');
+  if (event.inputType === 'deleteContentBackward') {
+      // Focus previous input if exists when backspace is pressed
+      if (inputIndex > 0) inputs[inputIndex - 1]?.focus();
+  } else {
+      // Move focus to next input if character is entered and not a backspace
+      if (event.target.value.length === 1 && inputIndex < inputs.length - 1) {
+          inputs[inputIndex + 1].focus();
+      }
+  }
+}

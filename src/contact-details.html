@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tranxfa</title>
+
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="../src/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-50">
+      <div class="relative flex flex-col md:flex-row w-full h-screen bg-white">
+        <!-- Left Section with Full Size Image -->
+        <div class=" w-[60%] md:w-[60%] h-auto md:h-full">
+          <!-- Top Image in Mobile View -->
+          <img src="../images/profile-setup.png" alt="Full Size Image"
+            class="w-full h-90 md:h-full object-cover hidden md:block">
+          <!-- Logo and Cross in Mobile View -->
+          <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
+            <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
+            <a href="verify-email.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5 w-25"><img
+                src="../images/back.png"></a>
+          </div>
+          <!-- Logo at Top Left (Desktop) -->
+          <div class="absolute top-4 left-4 hidden md:block">
+            <!-- <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a> -->
+
+          </div>
+          <!-- Cross Mark at Form Right Corner (Desktop) -->
+          <div class="hidden md:block  absolute top-4 right-4">
+            <a href="verify-email.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+                src="../images/back.png"></a>
+          </div>
+        </div>
+
+        <!-- Form Section -->
+        <!-- Form Section -->
+        <div class="flex-1 flex  justify-center p-4 md:p-8 lg:mt-80px md:mt-[80px] sm:mt-[80px] mt-[80px]">
+          <div class="w-full max-w-xl">
+            <div class="bg-gray-100 p-5 rounded-[10px]">
+              <div class="max-w-3xl mx-auto">
+                <!-- Progress bar container -->
+                <div class="flex justify-between items-center">
+                  <!-- Step 1 (Completed) -->
+                  <div class="flex items-center text-sm font-medium text-green-600">
+                    <div class="rounded-full bg-green-600 w-6 h-6 flex items-center justify-center">
+                      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="ml-3">Your country</span>
+                  </div>
+
+                  <!-- Step 2 (Active) -->
+                  <div class="flex items-center text-sm font-medium text-green-600">
+                    <div class="rounded-full bg-green-600 w-6 h-6 flex items-center justify-center">
+                      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="ml-3">Personal Profile</span>
+                  </div>
+
+
+                  <!-- Step 3 (Inactive) -->
+                  <div class="flex items-center text-sm font-medium text-green-600">
+                    <div class="rounded-full bg-green-600 w-6 h-6 flex items-center justify-center">
+                      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="ml-3">Contact Details</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Form Header -->
+            <h2 class="text-2xl font-semibold text-black mb-4 mt-8">Add Your Contact Details
+            </h2>
+            <p class="text-md text-[#B7A3C1] mb-8">Complete your profile by fill Contact Details
+            </p>
+
+            <!-- Form -->
+            <form action="#" method="POST" class="space-y-6 mt-12">
+
+              <div class="mb-3">
+                <label for="address" class="block text-sm font-medium text-purple-secondary mb-3">Address</label>
+                <input type="address" id="address" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none " placeholder="Enter your address">
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="state" class="block text-sm font-medium text-purple-secondary mb-3">State</label>
+                <input type="state" id="state" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none " placeholder="Enter your State">
+              </div>
+          
+              <div class="mb-3">
+                <label for="postal" class="block text-sm font-medium text-purple-secondary mb-3">Postal / Zip Code</label>
+                <input type="postal" id="postal" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none " placeholder="Enter your Zip code/postal">
+              </div>
+            
+              <!-- Submit Button -->
+              <a href="factor-auth.html"
+                class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-blue-primary  transition">
+                Continue
+              </a>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="../src/js/script.js"></script>
+</body>
+
+</html>

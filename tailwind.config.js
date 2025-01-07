@@ -4,6 +4,14 @@ module.exports = {
     './src/index.html',
     './src/sign-up.html',
     './src/login.html',
+    './src/verify-email.html',
+    './src/country-residence.html',
+    './src/profile-setup.html',
+    './src/contact-details.html',
+    './src/factor-auth.html',
+    './src/factor-auth-code.html',
+    './src/enter-pin.html',
+    './src/dashboard.html',
   ],
   theme: {
     extend: {
