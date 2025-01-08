@@ -2,79 +2,74 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tranxfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranxfa</title>
 
-  <link href="../dist/output.css" rel="stylesheet">
-  <link href="../src/custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../src/custom.css" rel="stylesheet">
 </head>
 
 <body>
-  <main>
+    <main>
 
-    <div class="flex items-center justify-center min-h-screen bg-gray-50">
-      <div class="relative flex flex-col md:flex-row w-full h-screen bg-white">
-        <!-- Left Section with Full Size Image -->
-        <div class=" w-[60%] md:w-[60%] h-auto md:h-full">
-          <!-- Top Image in Mobile View -->
-          <img src="../images/factor-auth.png" alt="Full Size Image"
-            class="w-full h-90 md:h-full object-cover hidden md:block">
-          <!-- Logo and Cross in Mobile View -->
-          <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
-            <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
+        <div class="flex items-center justify-center min-h-screen bg-gray-50">
+            <div class="relative flex flex-col md:flex-row w-full h-screen bg-white">
+                <!-- Left Section with Full Size Image -->
+                <div class=" w-[60%] md:w-[60%] h-auto md:h-full">
+                    <!-- Top Image in Mobile View -->
+                    <img src="../images/factor-auth.png" alt="Full Size Image" class="w-full h-90 md:h-full object-cover hidden md:block">
+                    <!-- Logo and Cross in Mobile View -->
+                    <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
+                        <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
+                        <!-- <a href="country-residence.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+                src="../images/back.png"></a> -->
+                    </div>
+                    <!-- Logo at Top Left (Desktop) -->
+                    <div class="absolute top-4 left-4 hidden md:block">
+                        <!-- <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a> -->
+
+                    </div>
+                    <!-- Cross Mark at Form Right Corner (Desktop) -->
+                    <!-- <div class="hidden md:block  absolute top-4 right-4">
             <a href="country-residence.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
                 src="../images/back.png"></a>
-          </div>
-          <!-- Logo at Top Left (Desktop) -->
-          <div class="absolute top-4 left-4 hidden md:block">
-            <!-- <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a> -->
+          </div> -->
+                </div>
 
-          </div>
-          <!-- Cross Mark at Form Right Corner (Desktop) -->
-          <div class="hidden md:block  absolute top-4 right-4">
-            <a href="country-residence.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
-                src="../images/back.png"></a>
-          </div>
-        </div>
+                <!-- Form Section -->
+                <!-- Form Section -->
+                <div class="flex-1 flex items-center justify-center p-4 md:p-8">
+                    <div class="w-full max-w-xl">
+                        <!-- Form Header -->
+                        <h2 class="text-2xl font-semibold text-black mb-4">2-Factor Authentication
+                        </h2>
+                        <p class="text-md text-[#B7A3C1] mb-8">Two-Factor authentication (sometimes called 2FA) is an additional layer of security for your account. Passwords can be compromised - especially if you use the same password for multiple sites. Adding Two-Factor authentication means
+                            that even if your password gets stolen, you account will remain secure. </p>
 
-        <!-- Form Section -->
-        <!-- Form Section -->
-        <div class="flex-1 flex items-center justify-center p-4 md:p-8">
-          <div class="w-full max-w-xl">
-            <!-- Form Header -->
-            <h2 class="text-2xl font-semibold text-black mb-4">2-Factor Authentication
-            </h2>
-            <p class="text-md text-[#B7A3C1] mb-8">Two-Factor authentication (sometimes called 2FA) is an additional
-              layer of security for your account. Passwords can be compromised - especially if you use the same password
-              for multiple sites. Adding Two-Factor authentication means that even if your password gets stolen, you
-              account will remain secure. </p>
-
-            <!-- Form -->
-            <form action="#" method="POST" class="space-y-6 mt-12">
-              <!-- Submit Button -->
-              <div class="flex gap-8">
-                <a href="dashboard.html"
-                  class="block w-full bg-white text-center py-3 border border-purple-secondary font-medium text-purple-secondary rounded-[10px] hover:text-white hover:border-blue-primary hover:bg-blue-primary transition">
+                        <!-- Form -->
+                        <form action="#" method="POST" class="space-y-6 mt-12">
+                            <!-- Submit Button -->
+                            <div class="flex gap-8">
+                                <a href="dashboard.html" class="block w-full bg-white text-center py-3 border border-purple-secondary font-medium text-purple-secondary rounded-[10px] hover:text-white hover:border-blue-primary hover:bg-blue-primary transition">
                   Skip for Now
                 </a>
 
-                <a href="factor-auth-code.html"
-                  class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
+                                <a href="factor-auth-code.html" class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
                   Enable 2FA
                 </a>
 
-              </div>
+                            </div>
 
-            </form>
-          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-  </main>
+    </main>
 
-  <script src="../src/js/script.js"></script>
+    <script src="../src/js/script.js"></script>
 </body>
 
 </html>

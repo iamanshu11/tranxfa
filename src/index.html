@@ -2,38 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tranxfa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranxfa</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../dist/output.css" rel="stylesheet">
-  <link href="../src/custom.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../src/custom.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="bg-white  fixed w-full top-0 z-50">
-    <div class="container mx-auto px-6 md:px-12 flex justify-between items-center py-4">
-      <!-- Logo Section -->
-      <div class="flex items-center">
-        <img src="../images/logo.png" alt="VeloxPays Logo" class="" />
-      </div>
+    <header class="bg-white  fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center py-4">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <img src="../images/logo.png" alt="VeloxPays Logo" class="" />
+            </div>
 
-      <!-- Navigation Links for Desktop -->
-      <nav class="hidden md:flex space-x-6 items-center border  p-2 px-4 rounded-full shadow-md">
-        <a href="#" class="text-purple-secondary font-semibold hover:underline">Home</a>
-        <a href="#" class="text-gray-600 hover:text-purple-secondary">Product</a>
-        <a href="#" class="text-gray-600 hover:text-purple-secondary">Company</a>
-        <a href="#" class="text-gray-600 hover:text-purple-secondary">Help</a>
-        <a href="login.html" class="text-gray-600 hover:text-purple-secondary">Log In</a>
-        <a href="sign-up.html">
-          <button
-            class="px-4 py-2 bg-purple-secondary text-white  rounded-full hover:bg-black transition">Sign Up</button>
-        </a>
-      </nav>
+            <!-- Navigation Links for Desktop -->
+            <nav class="hidden md:flex space-x-6 items-center border  p-2 px-4 rounded-full shadow-md">
+                <a href="#" class="text-purple-secondary font-semibold hover:underline">Home</a>
+                <a href="#" class="text-gray-600 hover:text-purple-secondary">Product</a>
+                <a href="#" class="text-gray-600 hover:text-purple-secondary">Company</a>
+                <a href="#" class="text-gray-600 hover:text-purple-secondary">Help</a>
+                <a href="login.html" class="text-gray-600 hover:text-purple-secondary">Log In</a>
+                <a href="sign-up.html">
+                    <button class="px-4 py-2 bg-purple-secondary text-white  rounded-full hover:bg-black transition">Sign Up</button>
+                </a>
+            </nav>
 
-      <!-- Burger Icon for Mobile -->
-      <button class="md:hidden text-purple-secondary" id="burger-menu">
+            <!-- Burger Icon for Mobile -->
+            <button class="md:hidden text-purple-secondary" id="burger-menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
           id="burger-icon">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -43,57 +42,52 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-    </div>
-
-    <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md hidden z-40">
-      <div class="flex flex-col items-center space-y-4 py-6">
-        <a href="index.html" class="text-purle-secondary font-semibold hover:underline">Home</a>
-        <a href="#" class="text-gray-600 text-lg hover:text-purple-secondary">Product</a>
-        <a href="#" class="text-gray-600 hover:text-purple-secondary">Company</a>
-        <a href="#" class="text-gray-600 text-lg hover:text-purple-secondary">Help</a>
-        <a href="login.html" class="text-gray-600 text-lg hover:text-purple-secondary">Log In</a>
-        <a href="sign-up.html">
-          <button
-            class="px-4 py-2 bg-purple-secondary text-white  rounded-full hover:bg-black transition">Sign Up</button>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <section
-      class="min-h-screen h-auto flex items-center justify-center px-6 bg-[#fff] text-white pt-120 bg-cover bg-no-repeat"
-      style="background-image: url('../images/vector-home.png')">
-      <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
-        <!-- Left Section -->
-        <div class="lg:w-1/2 mb-12 lg:mb-0">
-          <div class="text-left space-y-4 lg:w-1/2">
-            <p class="text-sm font-bold text-black">2M+ User</p>
-            <hr>
-            <p class="text-lg text-black">
-              Send money around the world
-            </p>
-            <h1 class="text-3xl lg:text-5xl font-bold text-black">Fast<br>Safe And<br>Secure</h1>
-            <p class="text-lg text-black">
-              Send money around the world and save 4x more on worldwide money transfer
-            </p>
-          </div>
         </div>
 
-        <!-- Right Section -->
-        <div class="lg:w-1/2  text-black rounded-lg  relative">
-          <div class="relative w-full max-w-md shadow-md h-full rounded-xl bg-white px-4 py-4">
-            <form class="relative">
-              <!-- Input Section for Sending Money -->
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md hidden z-40">
+            <div class="flex flex-col items-center space-y-4 py-6">
+                <a href="index.html" class="text-purle-secondary font-semibold hover:underline">Home</a>
+                <a href="#" class="text-gray-600 text-lg hover:text-purple-secondary">Product</a>
+                <a href="#" class="text-gray-600 hover:text-purple-secondary">Company</a>
+                <a href="#" class="text-gray-600 text-lg hover:text-purple-secondary">Help</a>
+                <a href="login.html" class="text-gray-600 text-lg hover:text-purple-secondary">Log In</a>
+                <a href="sign-up.html">
+                    <button class="px-4 py-2 bg-purple-secondary text-white  rounded-full hover:bg-black transition">Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </header>
 
-              <div class=" relative mt-2">
-                <label for="amount" class="block text-sm font-medium text-[#494949] px-2">You Send</label>
-                <div class="flex items-center  border rounded-[20px] mt-2 relative bg-gray-50">
-                  <button type="button" id="currency-button"
-                    class="inline-flex items-center bg-black px-4 py-4 rounded-l-[20px]  focus:outline-none relative w-full max-w-max"
-                    onclick="toggleDropdown('currency-dropdown')">
+    <main>
+
+        <section class="min-h-screen h-auto flex items-center justify-center  bg-[#fff] text-white pt-120 bg-cover bg-no-repeat" style="background-image: url('../images/vector-home.png')">
+            <div class="container px-10 mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
+                <!-- Left Section -->
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="text-left space-y-4 lg:w-1/2">
+                        <p class="text-sm font-bold text-black">2M+ User</p>
+                        <hr>
+                        <p class="text-lg text-black">
+                            Send money around the world
+                        </p>
+                        <h1 class="text-3xl lg:text-5xl font-bold text-black">Fast<br>Safe And<br>Secure</h1>
+                        <p class="text-lg text-black">
+                            Send money around the world and save 4x more on worldwide money transfer
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="lg:w-1/3  text-black rounded-lg  relative">
+                    <div class="relative w-full max-w-md shadow-md h-full rounded-xl bg-white px-4 py-4">
+                        <form class="relative">
+                            <!-- Input Section for Sending Money -->
+
+                            <div class=" relative mt-2">
+                                <label for="amount" class="block text-sm font-medium text-[#494949] px-2">You Send</label>
+                                <div class="flex items-center  border rounded-[20px] mt-2 relative bg-gray-50">
+                                    <button type="button" id="currency-button" class="inline-flex items-center bg-black px-4 py-4 rounded-l-[20px]  focus:outline-none relative w-full max-w-max" onclick="toggleDropdown('currency-dropdown')">
                     <img src="../images/money-flag/australia.png" alt="GBP Flag" class="h-8 mr-2" id="selected-flag" />
                     <span id="selected-currency" class="text-sm font-medium mr-2 text-white">AUD</span>
                     <svg id="dropdown-icon" class="w-5 h-5 text-white ml-2 transition-transform transform"
@@ -102,130 +96,114 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  <input type="text" id="amount" placeholder=" $ 2500"
-                    class="w-full text-[22px] bg-gray-50 px-3 py-3  text-gray-800 focus:outline-none rounded-[20px] " />
-                </div>
+                                    <input type="text" id="amount" placeholder=" $ 2500" class="w-full text-[22px] bg-gray-50 px-3 py-3  text-gray-800 focus:outline-none rounded-[20px] " />
+                                </div>
 
-                <!-- Currency Dropdown -->
-                <div id="currency-dropdown"
-                  class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
-                  <div class="p-2">
-                    <input type="text" id="currency-search" placeholder="Search currency..."
-                      class="w-full px-3 py-2 border rounded-md focus:outline-none"
-                      oninput="filterDropdown('currency-dropdown', 'currency-search')" />
-                  </div>
-                  <ul class="divide-y divide-gray-200">
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/australia.png', 'AUD')">
-                      <img src="../images/money-flag/australia.png" alt="AUD Flag" class="h-8 mr-2" />
-                      <span>AUD - Australian Dollar</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/bangladesh.png', 'BDT')">
-                      <img src="../images/money-flag/bangladesh.png" alt="BDT Flag" class="h-8 mr-2" />
-                      <span>BDT - Bangladeshi Taka</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/india.png', 'INR')">
-                      <img src="../images/money-flag/india.png" alt="INR Flag" class="h-8 mr-2" />
-                      <span>INR - Indian Rupee</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/pakistan.png', 'PKR')">
-                      <img src="../images/money-flag/pakistan.png" alt="PAK Flag" class="h-8 mr-2" />
-                      <span>PKR - Pakistani Rupee </span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/nepal.png', 'NPR')">
-                      <img src="../images/money-flag/nepal.png" alt="NGN Flag" class="h-8 mr-2" />
-                      <span>NPR - Nepalese Rupee</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
-                      <img src="../images/money-flag/sri-lanka.png" alt="LKR Flag" class="h-8 mr-2" />
-                      <span>LKR - Sri Lankan Rupee</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/malaysia.png', 'MYR')">
-                      <img src="../images/money-flag/malaysia.png" alt="MYR Flag" class="h-8 mr-2" />
-                      <span>MYR - Malaysian Ringgit</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/phillipine.png', 'PHP')">
-                      <img src="../images/money-flag/phillipine.png" alt="PHP Flag" class="h-8 mr-2" />
-                      <span>PHP - Philippine Peso</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/viatnam.png', 'VND')">
-                      <img src="../images/money-flag/viatnam.png" alt="VND Flag" class="h-8 mr-2" />
-                      <span>VND - Vietnamese Dong</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectCurrency('../images/money-flag/fiji.png', 'FJD')">
-                      <img src="../images/money-flag/fiji.png" alt="FJD Flag" class="h-8 mr-2" />
-                      <span>FJD - Fijian dollar</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                                <!-- Currency Dropdown -->
+                                <div id="currency-dropdown" class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
+                                    <div class="p-2">
+                                        <input type="text" id="currency-search" placeholder="Search currency..." class="w-full px-3 py-2 border rounded-md focus:outline-none" oninput="filterDropdown('currency-dropdown', 'currency-search')" />
+                                    </div>
+                                    <ul class="divide-y divide-gray-200">
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/australia.png', 'AUD')">
+                                            <img src="../images/money-flag/australia.png" alt="AUD Flag" class="h-8 mr-2" />
+                                            <span>AUD - Australian Dollar</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/bangladesh.png', 'BDT')">
+                                            <img src="../images/money-flag/bangladesh.png" alt="BDT Flag" class="h-8 mr-2" />
+                                            <span>BDT - Bangladeshi Taka</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/india.png', 'INR')">
+                                            <img src="../images/money-flag/india.png" alt="INR Flag" class="h-8 mr-2" />
+                                            <span>INR - Indian Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/pakistan.png', 'PKR')">
+                                            <img src="../images/money-flag/pakistan.png" alt="PAK Flag" class="h-8 mr-2" />
+                                            <span>PKR - Pakistani Rupee </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/nepal.png', 'NPR')">
+                                            <img src="../images/money-flag/nepal.png" alt="NGN Flag" class="h-8 mr-2" />
+                                            <span>NPR - Nepalese Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
+                                            <img src="../images/money-flag/sri-lanka.png" alt="LKR Flag" class="h-8 mr-2" />
+                                            <span>LKR - Sri Lankan Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/malaysia.png', 'MYR')">
+                                            <img src="../images/money-flag/malaysia.png" alt="MYR Flag" class="h-8 mr-2" />
+                                            <span>MYR - Malaysian Ringgit</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/phillipine.png', 'PHP')">
+                                            <img src="../images/money-flag/phillipine.png" alt="PHP Flag" class="h-8 mr-2" />
+                                            <span>PHP - Philippine Peso</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/viatnam.png', 'VND')">
+                                            <img src="../images/money-flag/viatnam.png" alt="VND Flag" class="h-8 mr-2" />
+                                            <span>VND - Vietnamese Dong</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectCurrency('../images/money-flag/fiji.png', 'FJD')">
+                                            <img src="../images/money-flag/fiji.png" alt="FJD Flag" class="h-8 mr-2" />
+                                            <span>FJD - Fijian dollar</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-              <!-- Transaction Breakdown -->
-              <div class="space-y-4 text-gray-600 px-4 py-2 relative mt-4 mb-4">
-                <!-- Exchange Rate -->
-                <div class="flex items-center justify-start space-x-4">
-                  <!-- Fixed width for text -->
-                  <div class="w-[70%] ">
-                    <span class="text-md text-[#01133F] whitespace-nowrap">Exchange rate</span>
-                  </div>
-                  <!-- Fixed width for icon and value, flex layout for alignment -->
-                  <div class="flex items-center space-x-2 flex-none">
-                    <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">x</span>
-                    <span class="text-[#01133F]">20</span>
-                  </div>
+                            <!-- Transaction Breakdown -->
+                            <div class="space-y-4 text-gray-600 px-4 py-2 relative mt-4 mb-4">
+                                <!-- Exchange Rate -->
+                                <div class="flex items-center justify-start space-x-4">
+                                    <!-- Fixed width for text -->
+                                    <div class="w-[70%] ">
+                                        <span class="text-md text-[#01133F] whitespace-nowrap">Exchange rate</span>
+                                    </div>
+                                    <!-- Fixed width for icon and value, flex layout for alignment -->
+                                    <div class="flex items-center space-x-2 flex-none">
+                                        <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">x</span>
+                                        <span class="text-[#01133F]">20</span>
+                                    </div>
 
 
-                </div>
-                <hr>
+                                </div>
+                                <hr>
 
-                <!-- Transaction Fees -->
-                <div class="flex items-center justify-start space-x-4">
-                  <!-- Fixed width for text -->
-                  <div class="w-[70%]">
-                    <span class="text-md text-[#01133F] whitespace-nowrap">Transaction fees</span>
-                  </div>
-                  <!-- Fixed width for icon and value, flex layout for alignment -->
-                  <div class="flex items-center space-x-2 flex-none">
-                    <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">+</span>
-                    <span class="text-[#01133F]">£ 0.00</span>
-                  </div>
-                </div>
-                <hr>
+                                <!-- Transaction Fees -->
+                                <div class="flex items-center justify-start space-x-4">
+                                    <!-- Fixed width for text -->
+                                    <div class="w-[70%]">
+                                        <span class="text-md text-[#01133F] whitespace-nowrap">Transaction fees</span>
+                                    </div>
+                                    <!-- Fixed width for icon and value, flex layout for alignment -->
+                                    <div class="flex items-center space-x-2 flex-none">
+                                        <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">+</span>
+                                        <span class="text-[#01133F]">£ 0.00</span>
+                                    </div>
+                                </div>
+                                <hr>
 
-                <!-- Converted Amount -->
-                <div class="flex items-center justify-start space-x-4">
-                  <!-- Fixed width for text -->
-                  <div class="w-[70%]">
-                    <span class="text-md text-[#01133F] whitespace-nowrap">Converted amount</span>
-                  </div>
-                  <!-- Fixed width for icon and value, flex layout for alignment -->
-                  <div class="flex items-center space-x-2 flex-none">
-                    <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">></span>
-                    <span class="text-[#01133F]">£ 100.01</span>
-                  </div>
-                </div>
+                                <!-- Converted Amount -->
+                                <div class="flex items-center justify-start space-x-4">
+                                    <!-- Fixed width for text -->
+                                    <div class="w-[70%]">
+                                        <span class="text-md text-[#01133F] whitespace-nowrap">Converted amount</span>
+                                    </div>
+                                    <!-- Fixed width for icon and value, flex layout for alignment -->
+                                    <div class="flex items-center space-x-2 flex-none">
+                                        <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">></span>
+                                        <span class="text-[#01133F]">£ 100.01</span>
+                                    </div>
+                                </div>
 
-                <hr>
-              </div>
+                                <hr>
+                            </div>
 
-              <!-- Input Section for Recipient Gets -->
+                            <!-- Input Section for Recipient Gets -->
 
-              <div class="mb-6 relative ">
-                <label for="recipient-amount" class="block text-sm font-medium text-[#494949] px-2">Recipient
+                            <div class="mb-6 relative ">
+                                <label for="recipient-amount" class="block text-sm font-medium text-[#494949] px-2">Recipient
                   Gets</label>
-                <div class="flex items-center border rounded-[20px] mt-2 relative bg-gray-50">
-                  <button type="button" id="recipient-currency-button"
-                    class="inline-flex items-center bg-black px-4 py-4 rounded-l-[20px] focus:outline-none relative w-full max-w-max"
-                    onclick="toggleDropdown('recipient-currency-dropdown')">
+                                <div class="flex items-center border rounded-[20px] mt-2 relative bg-gray-50">
+                                    <button type="button" id="recipient-currency-button" class="inline-flex items-center bg-black px-4 py-4 rounded-l-[20px] focus:outline-none relative w-full max-w-max" onclick="toggleDropdown('recipient-currency-dropdown')">
                     <img src="../images/money-flag/india.png" alt="NGN Flag" class="h-8 mr-2" id="recipient-flag" />
                     <span id="recipient-currency" class="text-sm font-medium mr-2 text-white">INR</span>
                     <svg class="w-5 h-5 text-white ml-2" id="dropdown-icon" fill="currentColor" stroke="currentColor"
@@ -233,479 +211,440 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  <input type="" id="recipient-amount" placeholder=" ₹ 2330.88"
-                    class="w-full text-[22px] px-3 py-2 bg-gray-50 text-gray-800 focus:outline-none rounded-[20px]" />
-                </div>
+                                    <input type="" id="recipient-amount" placeholder=" ₹ 2330.88" class="w-full text-[22px] px-3 py-2 bg-gray-50 text-gray-800 focus:outline-none rounded-[20px]" />
+                                </div>
 
 
-                <!-- Recipient Currency Dropdown -->
-                <div id="recipient-currency-dropdown"
-                  class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
-                  <div class="p-2">
-                    <input type="text" id="recipient-currency-search" placeholder="Search currency..."
-                      class="w-full px-3 py-2 border rounded-md focus:outline-none"
-                      oninput="filterDropdown('recipient-currency-dropdown', 'recipient-currency-search')" />
-                  </div>
-                  <ul class="divide-y divide-gray-200">
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/australia.png', 'AUD')">
-                      <img src="../images/money-flag/australia.png" alt="AUD Flag" class="h-8 mr-2" />
-                      <span>AUD - Australian Dollar</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
-                      <img src="../images/money-flag/sri-lanka.png" alt="NGN Flag" class="h-8 mr-2" />
-                      <span>LKR - Sri Lankan Rupee</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/bangladesh.png', 'BDT')">
-                      <img src="../images/money-flag/bangladesh.png" alt="BDT Flag" class="h-8 mr-2" />
-                      <span>BDT - Bangladeshi Taka</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/india.png', 'INR')">
-                      <img src="../images/money-flag/india.png" alt="INR Flag" class="h-8 mr-2" />
-                      <span>INR - Indian Rupee</span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/pakistan.png', 'PKR')">
-                      <img src="../images/money-flag/pakistan.png" alt="PKR Flag" class="h-8 mr-2" />
-                      <span>PKR - Pakistani Rupee </span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/nepal.png', 'NPR')">
-                      <img src="../images/money-flag/nepal.png" alt="NPR Flag" class="h-8 mr-2" />
-                      <span>NPR - Nepalese Rupee </span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/malaysia.png', 'MYR')">
-                      <img src="../images/money-flag/malaysia.png" alt="MYR Flag" class="h-8 mr-2" />
-                      <span>MYR - Malaysian Ringgit </span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/phillipine.png', 'PHP')">
-                      <img src="../images/money-flag/phillipine.png" alt="PHP Flag" class="h-8 mr-2" />
-                      <span>PHP - Philippine Peso </span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/viatnam.png', 'VND')">
-                      <img src="../images/money-flag/viatnam.png" alt="VND Flag" class="h-8 mr-2" />
-                      <span>VND - Vietnamese Dong </span>
-                    </li>
-                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onclick="selectRecipientCurrency('../images/money-flag/fiji.png', 'FJD')">
-                      <img src="../images/money-flag/fiji.png" alt="FJD Flag" class="h-8 mr-2" />
-                      <span>FJD - Fijian dollar </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                                <!-- Recipient Currency Dropdown -->
+                                <div id="recipient-currency-dropdown" class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
+                                    <div class="p-2">
+                                        <input type="text" id="recipient-currency-search" placeholder="Search currency..." class="w-full px-3 py-2 border rounded-md focus:outline-none" oninput="filterDropdown('recipient-currency-dropdown', 'recipient-currency-search')" />
+                                    </div>
+                                    <ul class="divide-y divide-gray-200">
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/australia.png', 'AUD')">
+                                            <img src="../images/money-flag/australia.png" alt="AUD Flag" class="h-8 mr-2" />
+                                            <span>AUD - Australian Dollar</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
+                                            <img src="../images/money-flag/sri-lanka.png" alt="NGN Flag" class="h-8 mr-2" />
+                                            <span>LKR - Sri Lankan Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/bangladesh.png', 'BDT')">
+                                            <img src="../images/money-flag/bangladesh.png" alt="BDT Flag" class="h-8 mr-2" />
+                                            <span>BDT - Bangladeshi Taka</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/india.png', 'INR')">
+                                            <img src="../images/money-flag/india.png" alt="INR Flag" class="h-8 mr-2" />
+                                            <span>INR - Indian Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/pakistan.png', 'PKR')">
+                                            <img src="../images/money-flag/pakistan.png" alt="PKR Flag" class="h-8 mr-2" />
+                                            <span>PKR - Pakistani Rupee </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/nepal.png', 'NPR')">
+                                            <img src="../images/money-flag/nepal.png" alt="NPR Flag" class="h-8 mr-2" />
+                                            <span>NPR - Nepalese Rupee </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/malaysia.png', 'MYR')">
+                                            <img src="../images/money-flag/malaysia.png" alt="MYR Flag" class="h-8 mr-2" />
+                                            <span>MYR - Malaysian Ringgit </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/phillipine.png', 'PHP')">
+                                            <img src="../images/money-flag/phillipine.png" alt="PHP Flag" class="h-8 mr-2" />
+                                            <span>PHP - Philippine Peso </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/viatnam.png', 'VND')">
+                                            <img src="../images/money-flag/viatnam.png" alt="VND Flag" class="h-8 mr-2" />
+                                            <span>VND - Vietnamese Dong </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer" onclick="selectRecipientCurrency('../images/money-flag/fiji.png', 'FJD')">
+                                            <img src="../images/money-flag/fiji.png" alt="FJD Flag" class="h-8 mr-2" />
+                                            <span>FJD - Fijian dollar </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-              <!-- Get Started Button -->
-              <button
-                class="w-full bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[20px] hover:bg-black">
+                            <!-- Get Started Button -->
+                            <button class="w-full bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[20px] hover:bg-black">
                 Send
               </button>
 
-            </form>
-          </div>
+                        </form>
+                    </div>
 
-        </div>
+                </div>
 
-      </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="bg-white py-16">
-      <div class="container mx-auto px-6 lg:px-12 text-center">
-        <!-- Title -->
-        <h1 class="text-3xl lg:text-5xl font-bold text-black mb-4">
-          We are the best money <br> transfer provider
-        </h1>
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-6 lg:px-12 text-center">
+                <!-- Title -->
+                <h1 class="text-3xl lg:text-5xl font-bold text-black mb-4">
+                    We are the best money <br> transfer provider
+                </h1>
 
-        <!-- Description -->
-        <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-8">
-          Highly highnote's issuer platform brings together everything you need to transfer money from one place to
-          worldwide for your loved one.
-          <a href="#" class="font-semibold text-black"> Download Now</a>
-        </p>
+                <!-- Description -->
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-8">
+                    Highly highnote's issuer platform brings together everything you need to transfer money from one place to worldwide for your loved one.
+                    <a href="#" class="font-semibold text-black"> Download Now</a>
+                </p>
 
-        <!-- App Store and Google Play Buttons -->
-        <div class="flex justify-center items-center space-x-4">
-          <!-- App Store Button -->
-          <a href="#"
-            class="flex items-center justify-center w-48 h-14 bg-black text-white rounded-md shadow-lg hover:bg-gray-800">
-            <img src="../images/apple.png" alt="Apple Logo" class="w-6 h-6 mr-2" />
-            <span class="text-left">
+                <!-- App Store and Google Play Buttons -->
+                <div class="flex justify-center items-center space-x-4">
+                    <!-- App Store Button -->
+                    <a href="#" class="flex items-center justify-center w-48 h-14 bg-black text-white rounded-md shadow-lg hover:bg-gray-800">
+                        <img src="../images/apple.png" alt="Apple Logo" class="w-6 h-6 mr-2" />
+                        <span class="text-left">
               <span class="block text-xs">Download on the</span>
-              <span class="block text-sm font-semibold">App Store</span>
-            </span>
-          </a>
+                        <span class="block text-sm font-semibold">App Store</span>
+                        </span>
+                    </a>
 
-          <!-- Google Play Button -->
-          <a href="#"
-            class="flex items-center justify-center w-48 h-14 bg-black text-white rounded-md shadow-lg hover:bg-gray-800">
-            <img src="../images/play-store.png" alt="Google Play Logo" class="w-6 h-6 mr-2" />
-            <span class="text-left">
+                    <!-- Google Play Button -->
+                    <a href="#" class="flex items-center justify-center w-48 h-14 bg-black text-white rounded-md shadow-lg hover:bg-gray-800">
+                        <img src="../images/play-store.png" alt="Google Play Logo" class="w-6 h-6 mr-2" />
+                        <span class="text-left">
               <span class="block text-xs">GET IT ON</span>
-              <span class="block text-sm font-semibold">Google Play</span>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="bg-cyan-100 py-16">
-      <div
-        class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center rounded-[30px] bg-purple-secondary text-white p-10 lg:p-16">
-        <!-- Text Section -->
-        <div class="lg:w-1/2">
-          <h1 class="text-3xl lg:text-5xl font-bold mb-4 leading-tight">
-            Every <br> transaction <br> is a story <br> — what is yours?
-          </h1>
-          <p class="text-lg leading-relaxed mb-6">
-            When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It
-            becomes an opportunity to strengthen connections and nurture ties with the people and places that have
-            shaped us.
-          </p>
-          <p class="text-lg leading-relaxed mb-8">
-            When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It
-            becomes an opportunity to strengthen connections and nurture ties with the people and places that have
-            shaped us.
-          </p>
-        </div>
+                        <span class="block text-sm font-semibold">Google Play</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cyan-100 py-16">
+            <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center rounded-[30px] bg-purple-secondary text-white p-10 lg:p-16">
+                <!-- Text Section -->
+                <div class="lg:w-1/2">
+                    <h1 class="text-3xl lg:text-5xl font-bold mb-4 leading-tight">
+                        Every <br> transaction <br> is a story <br> — what is yours?
+                    </h1>
+                    <p class="text-lg leading-relaxed mb-6">
+                        When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-8">
+                        When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.
+                    </p>
+                </div>
 
-        <!-- Image Section -->
-        <div class="lg:w-1/2 flex flex-col items-center mt-10 lg:mt-0">
-          <img src="../images/every-trnas.png" alt="Phone illustration" class="w-64 h-auto mb-6" />
-          <a href="#"
-            class="inline-block bg-black text-white text-sm font-medium py-3 px-6 rounded-full shadow-md hover:bg-gray-800">
+                <!-- Image Section -->
+                <div class="lg:w-1/2 flex flex-col items-center mt-10 lg:mt-0">
+                    <img src="../images/every-trnas.png" alt="Phone illustration" class="w-80 h-auto mb-6" />
+                    <a href="#" class="inline-block bg-black text-white text-sm font-medium py-3 px-6 rounded-full shadow-md hover:bg-gray-800">
             Share Your Story
           </a>
-        </div>
-      </div>
-    </section>
+                </div>
+            </div>
+        </section>
 
-    <section class="bg-cyan-100 py-16">
-      <div class="container mx-auto px-4 text-center">
-        <!-- Headline -->
-        <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-          Crucial moments, call for crucial security
-        </h1>
+        <section class="bg-cyan-100 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <!-- Headline -->
+                <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Crucial moments, call for crucial security
+                </h1>
 
-        <!-- Subtext -->
-        <p class="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
-          When it comes to global money transfers, every transaction becomes more than just a monetary exchange.
-          It becomes an opportunity to strengthen connections and nurture ties with the people and places that have
-          shaped us.
-        </p>
+                <!-- Subtext -->
+                <p class="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
+                    When it comes to global money transfers, every transaction becomes more than just a monetary exchange. It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.
+                </p>
 
-        <!-- Map Image -->
-        <div class="mt-8">
-          <img src="../images/crucial-map.png" alt="World Map with Highlighted Regions"
-            class="mx-auto max-w-full h-auto" />
-        </div>
-      </div>
-    </section>
+                <!-- Map Image -->
+                <div class="mt-8">
+                    <img src="../images/crucial-map.png" alt="World Map with Highlighted Regions" class="mx-auto max-w-full h-auto" />
+                </div>
+            </div>
+        </section>
 
-    <section class="bg-cyan-100 py-16">
-      <div
-        class="container mx-auto px-6 lg:px-12 flex flex-col-reverse lg:flex-row sm:flex-row-reverse items-center rounded-[30px] bg-purple-secondary text-white p-10 lg:p-16">
+        <section class="bg-cyan-100 py-16">
+            <div class="container mx-auto px-6 lg:px-12 flex flex-col-reverse lg:flex-row sm:flex-row-reverse items-center rounded-[30px] bg-purple-secondary text-white p-10 lg:p-16">
 
-        <!-- Image Section -->
-        <div class="lg:w-1/2 flex flex-col items-center mt-10 lg:mt-0">
-          <img src="../images/every-trnas.png" alt="Phone illustration" class="w-64 h-auto mb-6" />
-          <a href="#"
-            class="inline-block bg-black text-white text-sm font-medium py-3 px-6 rounded-full shadow-md hover:bg-gray-800">
+                <!-- Image Section -->
+                <div class="lg:w-1/2 flex flex-col items-center mt-10 lg:mt-0">
+                    <img src="../images/every-trnas.png" alt="Phone illustration" class="w-80 h-auto mb-6" />
+                    <a href="#" class="inline-block bg-black text-white text-sm font-medium py-3 px-6 rounded-full shadow-md hover:bg-gray-800">
             Send Money Now
           </a>
-        </div>
-        <!-- Text Section -->
-        <div class="lg:w-1/2">
-          <h1 class="text-3xl lg:text-5xl font-bold mb-4 leading-tight">
-            #3 step to send <br> money to your love <br> 💕1
-          </h1>
-          <p class="text-lg leading-relaxed mb-6">
-            When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It
-            becomes an opportunity to strengthen connections and nurture ties with the people and places that have
-            shaped us.
-          </p>
-          <p class="text-lg leading-relaxed mb-8">
-            When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It
-            becomes an opportunity to strengthen connections and nurture ties with the people and places that have
-            shaped us.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-cyan-100 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <!-- Headline -->
-        <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-          Popular Transfer Corridors
-        </h1>
-
-        <!-- Subtext -->
-        <p class="text-sm text-gray-700 max-w-lg mx-auto mb-6">
-          Strengthen connections and nurture ties with people and places that matter most.
-        </p>
-
-        <!-- Cards -->
-        <div class="flex flex-wrap justify-center gap-4 mb-6">
-          <!-- Card Template -->
-          <div class="bg-purple-100 rounded-lg  shadow w-60">
-            <div class="flex items-center justify-between mb-3 p-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Canada</span>
-              </div>
-              <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/south-africa.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">South Africa</span>
-              </div>
+                </div>
+                <!-- Text Section -->
+                <div class="lg:w-1/2">
+                    <h1 class="text-3xl lg:text-5xl font-bold mb-4 leading-tight">
+                        #3 step to send <br> money to your love <br> 💕1
+                    </h1>
+                    <p class="text-lg leading-relaxed mb-6">
+                        When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-8">
+                        When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.
+                    </p>
+                </div>
             </div>
-            <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
+        </section>
+
+        <section class="bg-cyan-100 py-12">
+            <div class="container mx-auto px-4 text-center">
+                <!-- Headline -->
+                <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Popular Transfer Corridors
+                </h1>
+
+                <!-- Subtext -->
+                <p class="text-sm text-gray-700 max-w-lg mx-auto mb-6">
+                    Strengthen connections and nurture ties with people and places that matter most.
+                </p>
+
+                <!-- Cards -->
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <!-- Card Template -->
+                    <div class="bg-purple-100 rounded-lg  shadow w-60">
+                        <div class="flex items-center justify-between mb-3 p-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Canada</span>
+                            </div>
+                            <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/south-africa.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">South Africa</span>
+                            </div>
+                        </div>
+                        <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
               Send
             </button>
-          </div>
+                    </div>
 
-          <!-- Card 2 -->
-          <div class="bg-purple-100 rounded-lg  shadow w-60">
-            <div class="flex items-center justify-between mb-3 p-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Canada</span>
-              </div>
-              <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/kenya.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Kenya</span>
-              </div>
-            </div>
-            <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
+                    <!-- Card 2 -->
+                    <div class="bg-purple-100 rounded-lg  shadow w-60">
+                        <div class="flex items-center justify-between mb-3 p-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Canada</span>
+                            </div>
+                            <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/kenya.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Kenya</span>
+                            </div>
+                        </div>
+                        <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
               Send
             </button>
-          </div>
-        </div>
+                    </div>
+                </div>
 
-        <div class="flex flex-wrap justify-center gap-4 mb-6">
-          <!-- Card 3 -->
-          <div class="bg-purple-100 rounded-lg  shadow w-60">
-            <div class="flex items-center justify-between mb-3 p-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Canada</span>
-              </div>
-              <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/egypt.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Egypt</span>
-              </div>
-            </div>
-            <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <!-- Card 3 -->
+                    <div class="bg-purple-100 rounded-lg  shadow w-60">
+                        <div class="flex items-center justify-between mb-3 p-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Canada</span>
+                            </div>
+                            <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/egypt.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Egypt</span>
+                            </div>
+                        </div>
+                        <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
               Send
             </button>
-          </div>
+                    </div>
 
-          <!-- Card 4 -->
-          <div class="bg-purple-100 rounded-lg  shadow w-60">
-            <div class="flex items-center justify-between mb-3 p-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Canada</span>
-              </div>
-              <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
-              <div class="flex flex-col items-center">
-                <img src="../images/popular-flag/nigeria.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
-                <span class="text-xs font-medium text-gray-700">Nigeria</span>
-              </div>
-            </div>
-            <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
+                    <!-- Card 4 -->
+                    <div class="bg-purple-100 rounded-lg  shadow w-60">
+                        <div class="flex items-center justify-between mb-3 p-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/canada.png" alt="Canada Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Canada</span>
+                            </div>
+                            <img src="../images/arrow.png" alt="Arrow Icon" class="w-6 h-6">
+                            <div class="flex flex-col items-center">
+                                <img src="../images/popular-flag/nigeria.png" alt="South Africa Flag" class="w-8 h-8 mb-1">
+                                <span class="text-xs font-medium text-gray-700">Nigeria</span>
+                            </div>
+                        </div>
+                        <button class="bg-purple-600 text-white text-xs py-2 rounded w-full">
               Send
             </button>
-          </div>
+                    </div>
 
-        </div>
+                </div>
 
-        <!-- Call-to-Action Button -->
-        <a href="#"
-          class="inline-block bg-black text-white text-sm font-medium py-3 px-6 rounded-full shadow-md hover:bg-gray-800">
+                <!-- Call-to-Action Button -->
+                <a href="#" class="inline-block bg-black text-white text-sm font-medium py-3 px-6 rounded-full shadow-md hover:bg-gray-800">
           Transfer Now
         </a>
-      </div>
-    </section>
-
-    <section class="py-16 bg-cyan-100">
-      <div class="container mx-auto">
-        <div class="text-center">
-          <h1 class="text-3xl lg:text-5xl font-bold text-gray-900">Money for life&#39;s crucial moments &mdash; in time
-            <br>
-            and without hidden fees
-          </h1>
-          <p class="mt-4 text-gray-700">When it comes to global money transfers, every transaction becomes more than
-            just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the
-            people and places that have shaped us.</p>
-        </div>
-
-        <!-- Carousel Section -->
-        <div class="mt-12 overflow-hidden relative">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <!-- Card 1 -->
-              <div class="swiper-slide flex justify-center">
-                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
-                  <h3 class="text-lg font-semibold">Great to see</h3>
-                  <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a
-                    monetary.</p>
-                </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="swiper-slide flex justify-center">
-                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
-                  <h3 class="text-lg font-semibold">Great to see</h3>
-                  <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a
-                    monetary.</p>
-                </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="swiper-slide flex justify-center">
-                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
-                  <h3 class="text-lg font-semibold">Great to see</h3>
-                  <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a
-                    monetary.</p>
-                </div>
-              </div>
-              <!-- Card 4 -->
-              <div class="swiper-slide flex justify-center">
-                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
-                  <h3 class="text-lg font-semibold">Great to see</h3>
-                  <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a
-                    monetary.</p>
-                </div>
-              </div>
-
-              <!-- Card 5 -->
-              <div class="swiper-slide flex justify-center">
-                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
-                  <h3 class="text-lg font-semibold">Great to see</h3>
-                  <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a
-                    monetary.</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="py-16 bg-white">
-      <div class="container mx-auto flex flex-col md:flex-row items-center">
-        <!-- Text Section -->
-        <div class="md:w-1/2 text-center md:text-left px-4">
-          <h1 class="text-3xl md:text-5xl font-bold text-gray-900">
-            Crucial <br> moments, call for <br> crucial security
-          </h1>
-          <p class="mt-4 text-gray-700">
-            When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It
-            becomes an opportunity to strengthen connections and nurture ties with the people and places that have
-            shaped us.
-          </p>
-        </div>
-        <!-- Image Section -->
-        <div class="md:w-1/2 flex justify-center mt-8 md:mt-0 px-4">
-          <img src="../images/crucial-moments.png" alt="Phone Security Illustration" class="w-full max-w-md">
-        </div>
-      </div>
-    </section>
+        <section class="py-16 bg-cyan-100">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h1 class="text-3xl lg:text-5xl font-bold text-gray-900">Money for life&#39;s crucial moments &mdash; in time
+                        <br> and without hidden fees
+                    </h1>
+                    <p class="mt-4 text-gray-700">When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.</p>
+                </div>
+
+                <!-- Carousel Section -->
+                <div class="mt-12 overflow-hidden relative">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Card 1 -->
+                            <div class="swiper-slide flex justify-center">
+                                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
+                                    <h3 class="text-lg font-semibold">Great to see</h3>
+                                    <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a monetary.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="swiper-slide flex justify-center">
+                                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
+                                    <h3 class="text-lg font-semibold">Great to see</h3>
+                                    <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a monetary.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="swiper-slide flex justify-center">
+                                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
+                                    <h3 class="text-lg font-semibold">Great to see</h3>
+                                    <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a monetary.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="swiper-slide flex justify-center">
+                                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
+                                    <h3 class="text-lg font-semibold">Great to see</h3>
+                                    <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a monetary.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="swiper-slide flex justify-center">
+                                <div class="bg-purple-600 text-white rounded-tr-[50px] p-6 w-80">
+                                    <h3 class="text-lg font-semibold">Great to see</h3>
+                                    <p class="mt-2">When it comes to global money transfers, every transaction becomes more than just a monetary.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container px-10 mx-auto flex flex-col md:flex-row items-center">
+                <!-- Text Section -->
+                <div class="md:w-1/2 text-center md:text-left px-4">
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900">
+                        Crucial <br> moments, call for <br> crucial security
+                    </h1>
+                    <p class="mt-4 text-gray-700">
+                        When it comes to global money transfers, every transaction becomes more than just a monetary exchange: It becomes an opportunity to strengthen connections and nurture ties with the people and places that have shaped us.
+                    </p>
+                </div>
+                <!-- Image Section -->
+                <div class="md:w-1/2 flex justify-center mt-8 md:mt-0 px-4">
+                    <img src="../images/crucial-moments.png" alt="Phone Security Illustration" class="w-full max-w-md">
+                </div>
+            </div>
+        </section>
 
 
 
-    <!-- Footer Section -->
-    <footer class="bg-[#E3E3E3] py-10 text-white relative ">
-      <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
-        <!-- Column 1 -->
-        <div class="flex-1">
-          <h3 class="font-semibold text-lg text-black">Company</h3>
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">About</a></li>
-            <li><a href="#" class="hover:underline text-black">Careers</a></li>
-            <li><a href="#" class="hover:underline text-black">Blogs</a></li>
-          </ul>
-        </div>
-        <!-- Column 2 -->
-        <div class="flex-1">
-          <h3 class="font-semibold text-lg text-black">Question</h3>
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">How it works</a></li>
-            <li><a href="#" class="hover:underline text-black">Help Center</a></li>
-            <li><a href="#" class="hover:underline text-black">Privacy Policy</a></li>
-            <li><a href="#" class="hover:underline text-black">Terms & Conditions</a></li>
-          </ul>
-        </div>
-        <!-- Column 3 -->
-        <div class="flex-1">
-          <h3 class="font-semibold text-lg text-black">Services</h3>
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">Money Transfer</a></li>
-            <li><a href="#" class="hover:underline text-black">Business</a></li>
-            <li><a href="#" class="hover:underline text-black">Currency Converter</a></li>
-            <li><a href="#" class="hover:underline text-black">Complaints</a></li>
-          </ul>
-        </div>
-        <!-- Column 4 -->
-        <div class="flex-1">
-          <h3 class="font-semibold text-lg text-black">Connect</h3>
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">LinkedIn</a></li>
-            <li><a href="#" class="hover:underline text-black">Instagram</a></li>
-            <li><a href="#" class="hover:underline text-black">Twitter</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <footer class="bg-[#E3E3E3] py-2 text-white relative">
-      <div class="container">
-        <hr class="bg-white h-[2px] border-0 opacity-80">
-      </div>
-    </footer>
-    <footer class="bg-[#E3E3E3]  text-white relative ">
-      <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
-        <!-- Column 1 -->
-        <div class="flex-1">
-          <ul class="mt-4 space-y-2">
-            <li><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20 mt-4"></li>
-          </ul>
-        </div>
-        <!-- Column 2 -->
-        <div class="flex-1">
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">Legal
+        <!-- Footer Section -->
+        <footer class="bg-[#E3E3E3] py-10 text-white relative ">
+            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
+                <!-- Column 1 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">About</a></li>
+                        <li><a href="#" class="hover:underline text-black">Careers</a></li>
+                        <li><a href="#" class="hover:underline text-black">Blogs</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Question</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">How it works</a></li>
+                        <li><a href="#" class="hover:underline text-black">Help Center</a></li>
+                        <li><a href="#" class="hover:underline text-black">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline text-black">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Services</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Money Transfer</a></li>
+                        <li><a href="#" class="hover:underline text-black">Business</a></li>
+                        <li><a href="#" class="hover:underline text-black">Currency Converter</a></li>
+                        <li><a href="#" class="hover:underline text-black">Complaints</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Connect</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline text-black">Instagram</a></li>
+                        <li><a href="#" class="hover:underline text-black">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <footer class="bg-[#E3E3E3] py-2 text-white relative">
+            <div class="container">
+                <hr class="bg-white h-[2px] border-0 opacity-80">
+            </div>
+        </footer>
+        <footer class="bg-[#E3E3E3]  text-white relative ">
+            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
+                <!-- Column 1 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20 mt-4"></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Legal
                 Complaints</a></li>
-          </ul>
-        </div>
-        <!-- Column 3 -->
-        <div class="flex-1">
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">Country site map</a></li>
-          </ul>
-        </div>
-        <!-- Column 4 -->
-        <div class="flex-1">
-          <ul class="mt-4 space-y-2">
-            <li><a href="#" class="hover:underline text-black">Cookie Policy</a></li>
-            <li><a href="#" class="hover:underline text-black">Modern slavery statement</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center py-2 mt-8 bg-purple-secondary">
-        <p class="text-sm text-white ">Tranxfa All rights reserved &copy;2024</p>
-      </div>
-    </footer>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Country site map</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:underline text-black">Modern slavery statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center py-2 mt-8 bg-purple-secondary">
+                <p class="text-sm text-white ">Tranxfa All rights reserved &copy;2024</p>
+            </div>
+        </footer>
 
-  </main>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="../src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../src/js/script.js"></script>
 </body>
 
 </html>
