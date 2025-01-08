@@ -28,7 +28,7 @@
         <a href="login.html" class="text-gray-600 hover:text-purple-secondary">LogIn</a>
         <a href="sign-up.html">
           <button
-            class="px-4 py-2 bg-blue-primary text-white  rounded-full hover:bg-purple-secondary transition">SignUp</button>
+            class="px-4 py-2 bg-purple-secondary text-white  rounded-full hover:bg-black transition">SignUp</button>
         </a>
       </nav>
 
@@ -55,7 +55,7 @@
         <a href="login.html" class="text-gray-600 text-lg hover:text-purple-secondary">LogIn</a>
         <a href="sign-up.html">
           <button
-            class="px-4 py-2 bg-blue-primary text-white  rounded-full hover:bg-purple-secondary transition">SignUp</button>
+            class="px-4 py-2 bg-purple-secondary text-white  rounded-full hover:bg-black transition">SignUp</button>
         </a>
       </div>
     </div>
@@ -72,11 +72,11 @@
           <div class="text-left space-y-4 lg:w-1/2">
             <p class="text-sm font-bold text-black">2M+ User</p>
             <hr>
-            <p class="text-lg text-gray-600">
+            <p class="text-lg text-black">
               Send money around the world
             </p>
             <h1 class="text-3xl lg:text-5xl font-bold text-black">Fast<br>Safe And<br>Secure</h1>
-            <p class="text-lg text-gray-600">
+            <p class="text-lg text-black">
               Send money around the world and save 4x more on worldwide money transfer
             </p>
           </div>
@@ -89,7 +89,7 @@
               <!-- Input Section for Sending Money -->
 
               <div class=" relative mt-2">
-                <label for="amount" class="block text-sm font-medium text-black px-2">You Send</label>
+                <label for="amount" class="block text-sm font-medium text-[#494949] px-2">You Send</label>
                 <div class="flex items-center  border rounded-[20px] mt-2 relative bg-gray-50">
                   <button type="button" id="currency-button"
                     class="inline-flex items-center bg-black px-4 py-4 rounded-l-[20px]  focus:outline-none relative w-full max-w-max"
@@ -103,7 +103,7 @@
                     </svg>
                   </button>
                   <input type="text" id="amount" placeholder=" $ 2500"
-                    class="w-full text-[22px] bg-gray-50 px-3 py-3 text-gray-800 focus:outline-none rounded-[20px] " />
+                    class="w-full text-[22px] bg-gray-50 px-3 py-3  text-gray-800 focus:outline-none rounded-[20px] " />
                 </div>
 
                 <!-- Currency Dropdown -->
@@ -170,48 +170,58 @@
               </div>
 
               <!-- Transaction Breakdown -->
-              <div class="space-y-4 text-gray-600 p-[10px] relative">
-                <!-- Vertical Dotted Line -->
-                <div class="absolute left-[20px] top-0 bottom-0">
-                  <div class="h-full border-l-2 border-dashed border-[#01133F]"></div>
-                </div>
-
-                <!-- Transaction Fees -->
-                <div class="flex justify-between items-center relative">
-                  <div class="flex items-center space-x-2">
-                    <span
-                      class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">+</span>
-                    <span class="text-[#01133F]">£ 0.00</span>
-                  </div>
-                  <span class="text-md text-[#01133F]">Transaction fees</span>
-                </div>
-
-                <!-- Converted Amount -->
-                <div class="flex justify-between items-center relative">
-                  <div class="flex items-center space-x-2">
-                    <span
-                      class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">></span>
-                    <span class="text-[#01133F]">£ 100.01</span>
-                  </div>
-                  <span class="text-md text-[#01133F]">Converted amount</span>
-                </div>
+              <div class="space-y-4 text-gray-600 px-4 py-2 relative mt-4 mb-4">
 
                 <!-- Exchange Rate -->
-                <div class="flex justify-between items-center relative">
+                <div class="flex items-center justify-between">
+                  <span class="text-md text-[#01133F] ">Exchange rate</span>
+                  <!-- Dotted Line with gray color -->
+                  <span class="flex-grow h-px my-2 bg-repeat-x" style="background-size: 20px 1px; background-image: url('data:image/svg+xml,%3Csvg%20width%3D%224%22%20height%3D%221%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23888888%22/%3E%3C/svg%3E');"></span>
+                  <!-- Icon and value -->
                   <div class="flex items-center space-x-2">
-                    <span
-                      class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">x</span>
-                    <span class="text-[#01133F]y">20</span>
+                      <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">x</span>
+                      <span class="text-[#01133F]">20</span>
                   </div>
-                  <span class="text-md text-[#01133F]">Exchange rate</span>
-                </div>
               </div>
+                <!-- Transaction Fees -->
+                <div class="flex items-center justify-between">
+                    <span class="text-md text-[#01133F]">Transaction fees</span>
+                    <!-- Dotted Line with gray color -->
+                    <span class="flex-grow h-px my-2 bg-repeat-x" style="background-size: 20px 1px; background-image: url('data:image/svg+xml,%3Csvg%20width%3D%224%22%20height%3D%221%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23888888%22/%3E%3C/svg%3E');"></span>
+                    <!-- Icon and value -->
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">+</span>
+                        <span class="text-[#01133F]">£ 0.00</span>
+                    </div>
+                </div>
+            
+                <!-- Converted Amount -->
+                <div class="flex items-center justify-between">
+                    <span class="text-md text-[#01133F] ">Converted amount</span>
+                    <!-- Dotted Line with gray color -->
+                    <span class="flex-grow h-px my-2 bg-repeat-x" style="background-size: 20px 1px; background-image: url('data:image/svg+xml,%3Csvg%20width%3D%224%22%20height%3D%221%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20width%3D%222%22%20height%3D%221%22%20fill%3D%22%23888888%22/%3E%3C/svg%3E');"></span>
+                    <!-- Icon and value -->
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-400 bg-[#01133F] rounded-full px-2 py-1 text-xs">></span>
+                        <span class="text-[#01133F]">£ 100.01</span>
+                    </div>
+                </div>
+            
+                
+            </div>
+            
+            
+            
+            
+            
+              
+            
 
 
               <!-- Input Section for Recipient Gets -->
 
               <div class="mb-6 relative ">
-                <label for="recipient-amount" class="block text-sm font-medium text-black px-2">Recipient
+                <label for="recipient-amount" class="block text-sm font-medium text-[#494949] px-2">Recipient
                   Gets</label>
                 <div class="flex items-center border rounded-[20px] mt-2 relative bg-gray-50">
                   <button type="button" id="recipient-currency-button"
@@ -294,7 +304,7 @@
 
               <!-- Get Started Button -->
               <button
-                class="w-full bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[20px] hover:bg-blue-primary ">
+                class="w-full bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[20px] hover:bg-black">
                 Send
               </button>
 
