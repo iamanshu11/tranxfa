@@ -771,6 +771,10 @@ html,
   margin-top: 0.625rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -919,6 +923,18 @@ html,
   width: 2px;
 }
 
+.w-\[35\%\]{
+  width: 35%;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[70\%\]{
+  width: 70%;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -958,6 +974,10 @@ html,
 
 .flex-1{
   flex: 1 1 0%;
+}
+
+.flex-none{
+  flex: none;
 }
 
 .flex-shrink-0{
@@ -1092,6 +1112,10 @@ html,
 
 .overflow-y-auto{
   overflow-y: auto;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .rounded{
