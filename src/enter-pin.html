@@ -18,11 +18,13 @@
                 <!-- Left Section with Full Size Image -->
                 <div class=" w-[60%] md:w-[60%] h-auto md:h-full">
                     <!-- Top Image in Mobile View -->
-                    <img src="../images/new-pin.png" alt="Full Size Image" class="w-full h-90 md:h-full object-cover hidden md:block">
+                    <img src="../images/new-pin.png" alt="Full Size Image"
+                        class="w-full h-90 md:h-full object-cover hidden md:block">
                     <!-- Logo and Cross in Mobile View -->
                     <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
                         <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
-                        <a href="factor-auth-code.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img src="../images/back.png"></a>
+                        <a href="factor-auth-code.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+                                src="../images/back.png"></a>
                     </div>
                     <!-- Logo at Top Left (Desktop) -->
                     <div class="absolute top-4 left-4 hidden md:block">
@@ -31,7 +33,8 @@
                     </div>
                     <!-- Cross Mark at Form Right Corner (Desktop) -->
                     <div class="hidden md:block  absolute top-4 right-4">
-                        <a href="factor-auth-code.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img src="../images/back.png"></a>
+                        <a href="factor-auth-code.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+                                src="../images/back.png"></a>
                     </div>
                 </div>
 
@@ -39,31 +42,50 @@
                 <!-- Form Section -->
                 <div class="flex-1 flex items-center justify-center p-4 md:p-8">
                     <div class="w-full max-w-xl">
+                        <!-- Logo at Top Left (Desktop)  -->
+                        <div class="hidden md:block">
+                            <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class=""></a>
+                        </div>
                         <!-- Form Header -->
                         <h2 class="text-2xl font-semibold text-black mb-4">Enter Your PIN
                         </h2>
-                        <p class="text-md text-[#B7A3C1] mb-6">Pin and Password are like toothbrush, don’t let anyone else use it.
+                        <p class="text-md text-[#B7A3C1] mb-6">Pin and Password are like toothbrush, don’t let anyone
+                            else use it.
                         </p>
 
                         <!-- Form -->
                         <form action="#" method="POST" class="space-y-6 mt-12">
                             <div class="mb-2">
-                                <label for="address" class="block text-sm font-medium text-purple-secondary mb-3">PIN</label>
+                                <label for="address"
+                                    class="block text-sm font-medium text-purple-secondary mb-3">PIN</label>
                                 <div class="flex mb-4" id="pin-input-container">
                                     <!-- First row of inputs -->
-                                    <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center" oninput="moveFocus(event, 0)" autofocus />
-                                    <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center" oninput="moveFocus(event, 1)" />
-                                    <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center" oninput="moveFocus(event, 2)" />
-                                    <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center" oninput="moveFocus(event, 3)" />
-                                    <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center" oninput="moveFocus(event, 4)" />
-                                    <input type="text" maxlength="1" class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center" oninput="moveFocus(event, 5)" />
+                                    <input type="text" maxlength="1"
+                                        class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center"
+                                        oninput="moveFocus(event, 0)" autofocus />
+                                    <input type="text" maxlength="1"
+                                        class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center"
+                                        oninput="moveFocus(event, 1)" />
+                                    <input type="text" maxlength="1"
+                                        class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center"
+                                        oninput="moveFocus(event, 2)" />
+                                    <input type="text" maxlength="1"
+                                        class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center"
+                                        oninput="moveFocus(event, 3)" />
+                                    <input type="text" maxlength="1"
+                                        class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center"
+                                        oninput="moveFocus(event, 4)" />
+                                    <input type="text" maxlength="1"
+                                        class="w-1/4 m-1 border-2 border-gray-200 rounded p-4 text-center"
+                                        oninput="moveFocus(event, 5)" />
                                 </div>
                             </div>
 
                             <!-- Submit Button -->
-                            <a href="dashboard.html" class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
-                Enable 2-Step Verification
-              </a>
+                            <a href="dashboard.html"
+                                class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
+                                Enable 2-Step Verification
+                            </a>
                         </form>
                     </div>
                 </div>

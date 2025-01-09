@@ -18,7 +18,8 @@
                 <!-- Left Section with Full Size Image -->
                 <div class=" w-[60%] md:w-[60%] h-auto md:h-full">
                     <!-- Top Image in Mobile View -->
-                    <img src="../images/verify-email.png" alt="Full Size Image" class="w-full h-90 md:h-full object-cover hidden md:block">
+                    <img src="../images/verify-email.png" alt="Full Size Image"
+                        class="w-full h-90 md:h-full object-cover hidden md:block">
                     <!-- Logo and Cross in Mobile View -->
                     <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
                         <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
@@ -41,6 +42,10 @@
                 <!-- Form Section -->
                 <div class="flex-1 flex items-center justify-center p-4 md:p-8">
                     <div class="w-full max-w-xl">
+                        <!-- Logo at Top Left (Desktop)  -->
+                        <div class="hidden md:block">
+                            <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class=""></a>
+                        </div>
                         <div class="bg-gray-100 p-5 rounded-[10px]">
                             <div class="max-w-3xl mx-auto">
                                 <!-- Progress bar container -->
@@ -48,9 +53,11 @@
                                     <!-- Step 1 (Completed) -->
                                     <div class="flex items-center text-sm font-medium text-green-600">
                                         <div class="rounded-full bg-green-600 w-6 h-6 flex items-center justify-center">
-                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
+                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7"></path>
+                                            </svg>
                                         </div>
                                         <span class="ml-3">Your country</span>
                                     </div>
@@ -58,9 +65,11 @@
                                     <!-- Step 2 (Active) -->
                                     <div class="flex items-center text-sm font-medium text-gray-500">
                                         <div class="rounded-full bg-[#CECECE] w-6 h-6 flex items-center justify-center">
-                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
+                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7"></path>
+                                            </svg>
                                         </div>
                                         <span class="ml-3">Personal Profile</span>
                                     </div>
@@ -69,9 +78,11 @@
                                     <!-- Step 3 (Inactive) -->
                                     <div class="flex items-center text-sm font-medium text-gray-500">
                                         <div class="rounded-full bg-[#CECECE] w-6 h-6 flex items-center justify-center">
-                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
+                                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7"></path>
+                                            </svg>
                                         </div>
                                         <span class="ml-3">Contact Details</span>
                                     </div>
@@ -92,56 +103,82 @@
                                 <div class="relative">
                                     <label for="Country" class="block text-purple-secondary mb-3">Country </label>
                                     <div class="flex items-center border border-gray-300 rounded-lg px-4 py-2 bg-white">
-                                        <img id="nationality-flag" src="" alt="Flag" class="w-10 h-10 mr-2 hidden rounded-full" />
-                                        <input type="text" id="nationality-drop-input" name="nationality" placeholder="Select Your Country" class="w-full focus:outline-none bg-transparent text-gray-700" autocomplete="off" />
+                                        <img id="nationality-flag" src="" alt="Flag"
+                                            class="w-10 h-10 mr-2 hidden rounded-full" />
+                                        <input type="text" id="nationality-drop-input" name="nationality"
+                                            placeholder="Select Your Country"
+                                            class="w-full focus:outline-none bg-transparent text-gray-700"
+                                            autocomplete="off" />
                                         <!-- Dropdown Icon with Clickable Area -->
                                         <button id="dropdown-button" class="focus:outline-none">
-                      <svg id="dropdown-icon" class="w-4 h-4 text-gray-500 transform transition-transform duration-200"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </button>
+                                            <svg id="dropdown-icon"
+                                                class="w-4 h-4 text-gray-500 transform transition-transform duration-200"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
                                     </div>
 
                                     <!-- Dropdown List -->
-                                    <ul id="nationality-drop-list" class="absolute z-10 w-full bg-gray-100 border border-gray-300 rounded-md  mt-1 max-h-40 overflow-y-auto hidden">
+                                    <ul id="nationality-drop-list"
+                                        class="absolute z-10 w-full bg-gray-100 border border-gray-300 rounded-md  mt-1 max-h-40 overflow-y-auto hidden">
                                         <!-- List of Countries -->
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Bangladesh', '../images/money-flag/bangladesh.png')">
-                                            <img src="../images/money-flag/bangladesh.png" alt="Bangladesh" class="w-10 h-10 mr-2 rounded-full" /> Bangladesh
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Bangladesh', '../images/money-flag/bangladesh.png')">
+                                            <img src="../images/money-flag/bangladesh.png" alt="Bangladesh"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Bangladesh
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('India', '../images/money-flag/india.png')">
-                                            <img src="../images/money-flag/india.png" alt="India" class="w-10 h-10 mr-2 rounded-full" /> India
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('India', '../images/money-flag/india.png')">
+                                            <img src="../images/money-flag/india.png" alt="India"
+                                                class="w-10 h-10 mr-2 rounded-full" /> India
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Pakistan', '../images/money-flag/pakistan.png')">
-                                            <img src="../images/money-flag/pakistan.png" alt="Pakistan" class="w-10 h-10 mr-2 rounded-full" /> Pakistan
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Pakistan', '../images/money-flag/pakistan.png')">
+                                            <img src="../images/money-flag/pakistan.png" alt="Pakistan"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Pakistan
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Nepal', '../images/money-flag/nepal.png')">
-                                            <img src="../images/money-flag/nepal.png" alt="Nepal" class="w-10 h-10 mr-2 rounded-full" /> Nepal
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Nepal', '../images/money-flag/nepal.png')">
+                                            <img src="../images/money-flag/nepal.png" alt="Nepal"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Nepal
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Sri Lanka', '../images/money-flag/sri-lanka.png')">
-                                            <img src="../images/money-flag/sri-lanka.png" alt="Sri Lanka" class="w-10 h-10 mr-2 rounded-full" /> Sri Lanka
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Sri Lanka', '../images/money-flag/sri-lanka.png')">
+                                            <img src="../images/money-flag/sri-lanka.png" alt="Sri Lanka"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Sri Lanka
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Malaysia', '../images/money-flag/malaysia.png')">
-                                            <img src="../images/money-flag/malaysia.png" alt="Malaysia" class="w-10 h-10 mr-2 rounded-full" /> Malaysia
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Malaysia', '../images/money-flag/malaysia.png')">
+                                            <img src="../images/money-flag/malaysia.png" alt="Malaysia"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Malaysia
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Philippines', '../images/money-flag/phillipine.png')">
-                                            <img src="../images/money-flag/phillipine.png" alt="Philippines" class="w-10 h-10 mr-2 rounded-full" /> Philippines
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Philippines', '../images/money-flag/phillipine.png')">
+                                            <img src="../images/money-flag/phillipine.png" alt="Philippines"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Philippines
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Vietnam', '../images/money-flag/viatnam.png')">
-                                            <img src="../images/money-flag/viatnam.png" alt="Vietnam" class="w-10 h-10 mr-2 rounded-full" /> Vietnam
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Vietnam', '../images/money-flag/viatnam.png')">
+                                            <img src="../images/money-flag/viatnam.png" alt="Vietnam"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Vietnam
                                         </li>
-                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center" onclick="selectNationality('Fiji', '../images/money-flag/fiji.png')">
-                                            <img src="../images/money-flag/fiji.png" alt="Fiji" class="w-10 h-10 mr-2 rounded-full" /> Fiji
+                                        <li class="px-4 py-2 cursor-pointer hover:bg-gray-200 flex items-center"
+                                            onclick="selectNationality('Fiji', '../images/money-flag/fiji.png')">
+                                            <img src="../images/money-flag/fiji.png" alt="Fiji"
+                                                class="w-10 h-10 mr-2 rounded-full" /> Fiji
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <!-- Submit Button -->
-                            <a href="profile-setup.html" class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
-                Continue
-              </a>
+                            <a href="profile-setup.html"
+                                class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
+                                Continue
+                            </a>
                         </form>
                     </div>
                 </div>

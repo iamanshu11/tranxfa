@@ -851,6 +851,14 @@ html,
   height: 100vh;
 }
 
+.h-20{
+  height: 5rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
 .max-h-40{
   max-height: 10rem;
 }
@@ -930,6 +938,14 @@ html,
 
 .w-full{
   width: 100%;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .min-w-0{
