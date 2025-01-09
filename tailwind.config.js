@@ -12,6 +12,14 @@ module.exports = {
     './src/factor-auth-code.html',
     './src/enter-pin.html',
     './src/dashboard.html',
+    './src/your-recipient.html',
+    './src/your-recipient-add.html',
+    './src/your-recipient-delivery.html',
+    './src/your-recipient-delivery-add.html',
+    './src/your-recipient-delivery-added-recipient.html',
+    './src/your-recipient-delivery-added-recipient-profile.html',
+    './src/your-trans.html',
+    './src/send-money.html',
   ],
   theme: {
     extend: {

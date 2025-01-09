@@ -279,3 +279,86 @@ function moveFocus(event, inputIndex) {
       }
   }
 }
+
+// *********** filter for Account  **************************** 
+function showForm(formId, element) {
+  // Hide all forms
+  document.getElementById('personalForm').classList.add('hidden');
+  document.getElementById('businessForm').classList.add('hidden');
+
+  // Remove active style from all links
+  document.querySelectorAll('.flex > a').forEach(a => {
+      a.children[0].style.backgroundColor = ''; // Reset background color
+  });
+
+  // Show the selected form and add active style
+  document.getElementById(formId).classList.remove('hidden');
+  element.children[0].style.backgroundColor = '#8B1EC4'; // Custom purple color for active state
+}
+
+// Ensure the DOM is fully loaded before running the script
+document.addEventListener('DOMContentLoaded', function() {
+  const personalLink = document.getElementById('personalLink');
+  showForm('personalForm', personalLink);
+});
+
+
+
+// *********** Payment Method **************************** 
+function togglePaymentMethodDropdown(event) {
+  const dropdown = document.getElementById('payment-method-dropdown');
+  const icon = document.getElementById('payment-method-icon');
+  dropdown.classList.toggle('hidden'); // Toggle visibility
+  icon.classList.toggle('rotate-180'); // Rotate the icon
+  event.stopPropagation(); // Prevent click event from bubbling up
+}
+
+function selectPaymentMethod(code, flagPath) {
+  const codeElement = document.getElementById('payment-method-code');
+  const flagElement = document.getElementById('payment-method-flag');
+  const icon = document.getElementById('payment-method-icon');
+  codeElement.textContent = code;
+  flagElement.src = flagPath;
+  document.getElementById('payment-method-dropdown').classList.add('hidden');
+  icon.classList.remove('rotate-180'); // Reset the icon rotation
+}
+
+// Click outside the payment method dropdown to close it and reset the icon rotation
+document.addEventListener('click', function(event) {
+  const dropdown = document.getElementById('payment-method-dropdown');
+  const icon = document.getElementById('payment-method-icon');
+  if (!dropdown.contains(event.target)) {
+    dropdown.classList.add('hidden');
+    icon.classList.remove('rotate-180'); // Reset the icon rotation
+  }
+});
+
+// *********** Account Transfer **************************** 
+function toggleAccountTransferDropdown(event) {
+  const dropdown = document.getElementById('account-transfer-dropdown');
+  const icon = document.getElementById('account-transfer-icon');
+  dropdown.classList.toggle('hidden'); // Toggle visibility
+  icon.classList.toggle('rotate-180'); // Rotate the icon
+  event.stopPropagation(); // Prevent click event from bubbling up
+}
+
+function selectAccountTransferMethod(code, flagPath) {
+  const codeElement = document.getElementById('account-transfer-code');
+  const flagElement = document.getElementById('account-transfer-flag');
+  const icon = document.getElementById('account-transfer-icon');
+  codeElement.textContent = code;
+  flagElement.src = flagPath;
+  document.getElementById('account-transfer-dropdown').classList.add('hidden');
+  icon.classList.remove('rotate-180'); // Reset the icon rotation
+}
+
+// Click outside the account transfer dropdown to close it and reset the icon rotation
+document.addEventListener('click', function(event) {
+  const dropdown = document.getElementById('account-transfer-dropdown');
+  const icon = document.getElementById('account-transfer-icon');
+  if (!dropdown.contains(event.target)) {
+    dropdown.classList.add('hidden');
+    icon.classList.remove('rotate-180'); // Reset the icon rotation
+  }
+});
+
