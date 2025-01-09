@@ -20,6 +20,7 @@ module.exports = {
     './src/your-recipient-delivery-added-recipient-profile.html',
     './src/your-trans.html',
     './src/send-money.html',
+    './src/send-money-add.html',
   ],
   theme: {
     extend: {
