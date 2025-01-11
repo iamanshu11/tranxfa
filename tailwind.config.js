@@ -21,6 +21,7 @@ module.exports = {
     './src/your-trans.html',
     './src/send-money.html',
     './src/send-money-add.html',
+    './src/occupation-details.html',
   ],
   theme: {
     extend: {

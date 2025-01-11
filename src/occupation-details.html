@@ -23,7 +23,7 @@
           <!-- Logo and Cross in Mobile View -->
           <div class="absolute top-4 left-4 md:hidden flex items-center justify-between w-full px-4">
             <a href="index.html"><img src="../images/logo.png" alt="VeloxPays Logo" class="w-20"></a>
-            <a href="occupation-details.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5 w-25"><img
+            <a href="profile-setup.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5 w-25"><img
                 src="../images/back.png"></a>
           </div>
           <!-- Logo at Top Left (Desktop) -->
@@ -33,14 +33,14 @@
           </div>
           <!-- Cross Mark at Form Right Corner (Desktop) -->
           <div class="hidden md:block  absolute top-4 right-4">
-            <a href="occupation-details.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
+            <a href="profile-setup.html" class="text-gray-600 text-2xl hover:text-gray-800 pr-5"><img
                 src="../images/back.png"></a>
           </div>
         </div>
 
         <!-- Form Section -->
         <!-- Form Section -->
-        <div class="flex-1 flex  justify-center p-4 md:p-8 lg:mt-80px md:mt-[80px] sm:mt-[80px] mt-[80px]">
+        <div class="flex-1 flex items-center justify-center p-4 md:p-8 lg:mt-80px md:mt-[80px] sm:mt-[80px] mt-[80px]">
           <div class="w-full max-w-xl">
             <!-- Logo at Top Left (Desktop)  -->
             <div class="hidden md:block">
@@ -58,7 +58,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
-                    <span class="ml-3">Your country</span>
+                    <span class="ml-3">Personal Profile</span>
                   </div>
 
                   <!-- Step 2 (Active) -->
@@ -69,13 +69,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
-                    <span class="ml-3">Personal Profile</span>
+                    <span class="ml-3">Occupation Details</span>
                   </div>
 
 
                   <!-- Step 3 (Inactive) -->
-                  <div class="flex items-center text-sm font-medium text-green-600">
-                    <div class="rounded-full bg-green-600 w-6 h-6 flex items-center justify-center">
+                  <div class="flex items-center text-sm font-medium text-gray-500">
+                    <div class="rounded-full bg-[#CECECE] w-6 h-6 flex items-center justify-center">
                       <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -89,39 +89,50 @@
             </div>
 
             <!-- Form Header -->
-            <h2 class="text-2xl font-semibold text-black mb-4 mt-8">Add Your Contact Details
+            <h2 class="text-2xl font-semibold text-black mb-4 mt-8">Profile Setup !
             </h2>
-            <p class="text-md text-[#B7A3C1] mb-8">Complete your profile by fill Contact Details
+            <p class="text-md text-[#B7A3C1] mb-8">Complete your profile by fill personal details
             </p>
 
             <!-- Form -->
             <form action="#" method="POST" class="space-y-6 mt-12">
 
-              <div class="mb-3">
-                <label for="address" class="block text-sm font-medium text-purple-secondary mb-3">Address</label>
-                <input type="address" id="address"
-                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none "
-                  placeholder="Enter your address">
+              <div class="mb-4">
+                <div class="w-full">
+                  <div class="relative">
+                    <label for="Country" class="block text-purple-secondary mb-3">Occupation </label>
+                    <select id="occupation" name="occupation" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5">
+                      <option selected>Choose an occupation</option>
+                      <option value="developer">Private Job Employee </option>
+                      <option value="manager">Govt Employee</option>
+                      <option value="teacher">Self employed</option>
+                      <option value="designer">Business Owner </option>
+                      <option value="designer">Freelancer  </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="w-full">
+                  <div class="relative">
+                    <label for="Country" class="block text-purple-secondary mb-3">Salary Range</label>
+                    <select id="occupation" name="occupation" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5">
+                      <option selected>Select your salary range</option>
+                      <option value="developer">CA$ 0 to CA$ 1000</option>
+                      <option value="manager">CA$ 1001 to CA$ 5000 </option>
+                      <option value="teacher">CA$ 5001 to CA$ 10000</option>
+                      <option value="designer">CA$ 10000+</option>
+                    </select>
+                  </div>
+                </div>
               </div>
 
 
-              <div class="mb-3">
-                <label for="state" class="block text-sm font-medium text-purple-secondary mb-3">State</label>
-                <input type="state" id="state"
-                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none "
-                  placeholder="Enter your State">
-              </div>
 
-              <div class="mb-3">
-                <label for="postal" class="block text-sm font-medium text-purple-secondary mb-3">Postal / Zip
-                  Code</label>
-                <input type="postal" id="postal"
-                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none "
-                  placeholder="Enter your Zip code/postal">
-              </div>
 
               <!-- Submit Button -->
-              <a href="factor-auth.html"
+              <a href="contact-details.html"
                 class="block w-full bg-purple-secondary  text-center py-3  font-medium text-white rounded-[10px] hover:bg-black  transition">
                 Continue
               </a>
