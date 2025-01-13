@@ -783,6 +783,10 @@ html,
   margin-top: 80px;
 }
 
+.mt-\[-40px\]{
+  margin-top: -40px;
+}
+
 .block{
   display: block;
 }
@@ -1925,6 +1929,10 @@ html,
 
   .sm\:mt-\[-33px\]{
     margin-top: -33px;
+  }
+
+  .sm\:mt-\[-40px\]{
+    margin-top: -40px;
   }
 
   .sm\:w-1\/4{
