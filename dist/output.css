@@ -1923,6 +1923,10 @@ html,
     margin-top: 80px;
   }
 
+  .sm\:mt-\[-33px\]{
+    margin-top: -33px;
+  }
+
   .sm\:w-1\/4{
     width: 25%;
   }
@@ -1952,6 +1956,10 @@ html,
 
   .md\:mt-\[80px\]{
     margin-top: 80px;
+  }
+
+  .md\:mt-\[-33px\]{
+    margin-top: -33px;
   }
 
   .md\:block{
@@ -2052,6 +2060,10 @@ html,
   }
 
   .lg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .lg\:mt-\[0px\]{
     margin-top: 0px;
   }
 
