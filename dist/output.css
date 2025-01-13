@@ -2027,6 +2027,11 @@ html,
     padding-right: 3rem;
   }
 
+  .md\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
