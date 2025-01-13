@@ -1389,6 +1389,10 @@ html,
   padding: 0.5rem;
 }
 
+.p-2\.5{
+  padding: 0.625rem;
+}
+
 .p-3{
   padding: 0.75rem;
 }
@@ -1407,10 +1411,6 @@ html,
 
 .p-\[10px\]{
   padding: 10px;
-}
-
-.p-2\.5{
-  padding: 0.625rem;
 }
 
 .px-10{
@@ -1700,11 +1700,6 @@ html,
   color: rgb(133 77 14 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-50{
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity, 1));
-}
-
 .opacity-80{
   opacity: 0.8;
 }
@@ -1847,11 +1842,6 @@ html,
 .focus\:border-indigo-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity, 1));
-}
-
-.focus\:border-blue-500:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
 }
 
 .focus\:outline-none:focus{

@@ -22,6 +22,9 @@ module.exports = {
     './src/send-money.html',
     './src/send-money-add.html',
     './src/occupation-details.html',
+    './src/forgot-password.html',
+    './src/otp-verification.html',
+    './src/reset-password.html',
   ],
   theme: {
     extend: {
