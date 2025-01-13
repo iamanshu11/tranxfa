@@ -1,9 +1,5 @@
 "use strict";
 
-
-  
-
-
 function toggleDropdown() {
     const dropdownList = document.getElementById('nationality-drop-list');
     dropdownList.classList.toggle('hidden');

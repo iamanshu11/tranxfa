@@ -223,13 +223,15 @@
                     <!-- Main Content -->
                     <main class="flex-1  p-4 md:p-6">
                         <!-- Transfer Calculator and Recipients Section -->
-                        <div class="bg-white min-h-screen  mt-4 md:mt-6 shadow-sm rounded-lg responsive-table">
-                            <div class="flex justify-between">
+                        <div class="bg-white min-h-screen  mt-4 md:mt-6 pb-4 shadow-sm rounded-lg responsive-table">
+                            <div class="flex justify-between items-center">
                                 <h2 class="text-xl font-semibold mb-2 p-4 md:p-6">Recent Transactions</h2>
-                                <a href="">
-                                    <p class="text-md font-semibold mb-2 p-4 md:p-6">See All</p>
+                                <a href="" class="flex items-center border-2 border-purple-500 rounded-lg bg-transparent px-4 py-2">
+                                    <img src="../images/dashboard/downlaod.png" class="h-5 w-5 mr-2">
+                                    <p class="text-md font-semibold">Request statement</p>
                                 </a>
                             </div>
+                            
                             <div class="overflow-y-auto max-h-max">
                                 <table class="min-w-full leading-normal p-4 md:p-6">
                                     <thead>
@@ -742,6 +744,35 @@
                                     </tbody>
                                 </table>
                             </div>
+
+                            <div id="pagination" class="flex items-center justify-center flex-wrap space-x-2 mt-6">
+                                <!-- Previous Button -->
+                                <button id="prevBtn" class="px-4 py-2 border rounded-lg text-gray-500 bg-white hover:bg-gray-100 disabled:opacity-50" disabled>
+                                    Previous
+                                </button>
+                            
+                                <!-- Page Numbers (Desktop) -->
+                                <div id="pageNumbers" class="hidden md:flex items-center space-x-2">
+                                    <button class="px-4 py-2 border rounded-lg bg-purple-500 text-white hover:bg-purple-600">1</button>
+                                    <button class="px-4 py-2 border rounded-lg text-gray-500 bg-white hover:bg-gray-100">2</button>
+                                    <button class="px-4 py-2 border rounded-lg text-gray-500 bg-white hover:bg-gray-100">3</button>
+                                    <span class="px-4 py-2">...</span>
+                                    <button class="px-4 py-2 border rounded-lg text-gray-500 bg-white hover:bg-gray-100">10</button>
+                                </div>
+                            
+                                <!-- Page Numbers (Mobile) -->
+                                <div id="pageNumbersMobile" class="flex md:hidden items-center space-x-2">
+                                    <button class="px-4 py-2 border rounded-lg bg-purple-500 text-white hover:bg-purple-600">1</button>
+                                    <span class="px-4 py-2">...</span>
+                                </div>
+                            
+                                <!-- Next Button -->
+                                <button id="nextBtn" class="px-4 py-2 border rounded-lg text-gray-500 bg-white hover:bg-gray-100">
+                                    Next
+                                </button>
+                            </div>
+                            
+
                         </div>
                         
                         
