@@ -669,6 +669,10 @@ html,
   z-index: 50;
 }
 
+.z-\[9999\]{
+  z-index: 9999;
+}
+
 .m-1{
   margin: 0.25rem;
 }
@@ -930,6 +934,10 @@ html,
 
 .w-full{
   width: 100%;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .min-w-0{
@@ -1909,6 +1917,10 @@ html,
 @media (min-width: 640px){
   .sm\:mt-\[80px\]{
     margin-top: 80px;
+  }
+
+  .sm\:w-1\/4{
+    width: 25%;
   }
 
   .sm\:flex-row-reverse{
