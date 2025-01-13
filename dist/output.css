@@ -2002,6 +2002,10 @@ html,
     flex-direction: row;
   }
 
+  .md\:gap-0{
+    gap: 0px;
+  }
+
   .md\:p-16{
     padding: 4rem;
   }
