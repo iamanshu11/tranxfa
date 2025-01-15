@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranxfa</title>
+
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../src/custom.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <div class="min-h-screen shadow-b-md">
+        <!-- Header -->
+        <header class="bg-white  p-4">
+            <div class="container mx-auto flex items-center justify-between overflow-x-auto">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <a href="index.html">
+                        <img src="../images/logo.png" alt="VeloxPays Logo" class="w-20">
+                    </a>
+                </div>
+
+                <!-- Profile Section / Burger Icon -->
+                <div class="flex items-center space-x-4">
+                    <!-- Burger Icon (visible only on mobile) -->
+                    <button class="block md:hidden text-gray-800" id="menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+
+                    <!-- Profile Icon and Name (visible only on desktop) -->
+                    <div class="hidden md:flex items-center space-x-2">
+                        <!-- Clickable Profile Section -->
+                        <a href="#" class="flex items-center space-x-2">
+                            <!-- Profile Icon -->
+                            <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
+                                AS
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <section class=" bg-[#F9FAFB] flex items-center">
+            <div class="container mx-auto   ">
+                <nav class="fixed inset-y-0 left-0 bg-gray-100 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-20 md:hidden min-h-screen"
+                    id="sidebar">
+                    <ul class="p-6 space-y-4">
+                        <li>
+                            <a href="dashboard.html"
+                                class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                                <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="send-money.html"
+                                class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                                <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Send Money
+                            </a>
+                        </li>
+                        <li>
+                            <a href="your-trans.html"
+                                class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Your Transfers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="your-recipient.html"
+                                class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Your Recipients
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                                    class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                Account Verification
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Account Settings
+                            </a>
+                        </li>
+                        <hr>
+
+                        <li>
+
+                            Other
+                        </li>
+                        <li>
+                            <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Help & Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700">
+                                <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                                <!-- Replace with your icon -->
+                                Log Out
+                            </a>
+                        </li>
+
+                        <div class="mt-8">
+                            <button
+                                class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[20px] hover:bg-black">Send
+                                Money</button>
+                        </div>
+                    </ul>
+
+                </nav>
+
+                <div class="flex bg-[#F9FAFB]">
+                    <!-- Sidebar for Desktop -->
+                    <aside class="hidden md:block w-1/4 p-6  shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
+                        <ul class="space-y-6">
+                            <li>
+                                <a href="dashboard.html"
+                                    class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                                    <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                                    <!-- Replace with your icon -->
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="send-money.html"
+                                    class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                                    <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                                    <!-- Replace with your icon -->
+                                    Send Money
+                                </a>
+                            </li>
+                            <li>
+                                <a href="your-trans.html"
+                                    class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/Transfer.png" alt="Transfers Icon"
+                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                    Your Transfers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="your-recipient.html"
+                                    class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/people.png" alt="Recipients Icon"
+                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                    Your Recipients
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                    Account Verification
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/settings.png" alt="Settings Icon"
+                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                    Account Settings
+                                </a>
+                            </li>
+                            <!-- Other sidebar items with icons -->
+
+                            <hr>
+
+                            <li>
+
+                                Other
+                            </li>
+
+                            <li>
+                                <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                                    <!-- Replace with your icon -->
+                                    Help & Support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/settings.png" alt="Settings Icon"
+                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                                    <!-- Replace with your icon -->
+                                    Log Out
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <button
+                                class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[15px] hover:bg-black">Send
+                                Money</button>
+                        </div>
+                        </ul>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <main class="flex-1 p-4 md:p-6">
+                        <!-- Transfer Calculator and Recipients Section -->
+
+                        <div class="flex flex-col lg:flex-row md:flex-col justify-between items-center p-6 bg-purple-secondary rounded-md gap-5">
+                            <h2 class="text-xl font-semibold mb-2 text-center text-white">Transfer #2345678887 To Sorlock John</h2>
+                            <div class="flex gap-4">
+                                <a href="" class="flex items-center border-2 border-white rounded-lg bg-transparent px-4 py-2">
+                                    <img src="../images/send-money/repeat.png" class="h-5 w-5 mr-2">
+                                    <p class="text-md font-semibold text-white">Repeat</p>
+                                </a>
+                                <a href="" class="flex items-center border-2 border-white rounded-lg bg-transparent px-4 py-2">
+                                    <img src="../images/send-money/print.png" class="h-5 w-5 mr-2">
+                                    <p class="text-md font-semibold text-white">Print</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 mt-8 hidden xxl:block">
+                            <div class="flex items-center justify-between">
+                                <!-- First Item -->
+                                <div class="relative flex items-center">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-4 h-4 bg-[#FFD22F] rounded-full"></div>
+                                        <span class="text-lg font-semibold text-[#FFD22F] mt-2">Payment Pending</span>
+                                        <span class="text-xs text-gray-600">We are waiting for you to complete payment.</span>
+                                    </div>
+                                    <!-- Extend line to cover the gap fully and interlock -->
+                                    <div class="absolute left-50% top-1 w-[27rem] h-0.5 bg-gray-300 border  border-[#FFD22F]" style="transform: translate(30%,29%);"></div>
+                                </div>
+                        
+                                <!-- Second Item -->
+                                <div class="relative flex items-center">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-4 h-4 bg-gray-300 rounded-full"></div>
+                                        <span class="text-lg font-semibold mt-2">Documents Uploaded</span>
+                                        <span class="text-xs text-gray-600">All required documents have been received.</span>
+                                    </div>
+                                    <!-- Extend line to cover the gap fully and interlock -->
+                                    <div class="absolute left-50% top-1 w-[26rem] h-0.5 bg-gray-300 border-dotted border-2 border-gray-300" style="transform: translate(30%,29%);"></div>
+                                </div>
+                        
+                                <!-- Third Item -->
+                                <div class="flex flex-col items-center">
+                                    <div class="w-4 h-4 bg-gray-300 rounded-full"></div>
+                                    <span class="text-lg font-semibold mt-2">Paid Out</span>
+                                    <span class="text-xs text-gray-600">Order has been successfully paid out.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex rounded-md p-6 mt-8 xxl:hidden bg-white">
+                            <ul class="relative">
+                                <li class="mb-2">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 rounded-full bg-[#FFD22F] mr-3 relative">
+                                            <!-- Adjusting position with inline style for precise control -->
+                                            <div class="absolute bottom-50% left-50% mb-2 w-0.5 bg-gradient-to-b from-[#FFD22F] to-[#fff] h-12 text-center" style="transform: translate(150%,17%);"></div>
+                                        </div>
+                                        <div class="">
+                                            <p><span class="text-[#FFD22F] text-xl">Payment Pending</span></p>
+                                            <span class="text-xs text-gray-600">We are waiting for you to complete payment.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="mb-2">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 rounded-full bg-[#A0A0A0] mr-3 relative">
+                                            <!-- Bottom connector for intermediate items -->
+                                            <div class="absolute bottom-50% left-50% mb-2 w-0.5 bg-[#A0A0A0] h-10 text-center" style="transform: translate(150%,22%);"></div>
+                                        </div>
+                                        <div class="">
+                                            <p><span class="text-xl text-[#A0A0A0]">Documents Uploaded</span></p>
+                                            <span class="text-xs text-gray-600">All required documents have been received.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="text-gray-500">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 rounded-full bg-[#A0A0A0] mr-3"></div>
+                                        <span class="text-xl text-[#A0A0A0]">Paid out</span>
+                                    </div>
+                                </li>
+     
+                            </ul>
+                        </div>
+                        
+                        
+                        
+                        <div class=" mt-8   lg:flex md:grid  gap-6">
+                            <div class="   rounded-lg w-full md:flex-1 mb-4">
+                                <div class="bg-white shadow-sm rounded-lg responsive-table">
+                                    <h2 class="text-xl font-semibold mb-2 p-4 md:p-6 text-purple-secondary">Transfer Summary
+                                    </h2>
+                                    <div class="divide-y  divide-[#F1F1F1] p-4">
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Amount sending</span>
+                                            <span class="text-black">£ 100.00</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Our exchange rate</span>
+                                            <span class="text-black">GBP = 20 GHS</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary"> Recipient receives</span>
+                                            <span class="text-black">₵ 2,000.00</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Delivery method</span>
+                                            <span class="text-black">Account Transfer</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Fees</span>
+                                            <span class="text-black">£ 0.00</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Payment option</span>
+                                            <span class="text-black">Local Bank Transfer</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Total to pay</span>
+                                            <span class="text-black">£ 100.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="   rounded-lg w-full md:flex-1">
+                                <div class="bg-white shadow-sm rounded-lg responsive-table">
+                                    <h2 class="text-xl font-semibold mb-2 p-4 md:p-6 text-purple-secondary">Recipient Details
+                                    </h2>
+                                    <div class="divide-y  divide-[#F1F1F1] p-4">
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Recipient Details</span>
+                                            <span class="text-black">Sorlock John</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary">Bank</span>
+                                            <span class="text-black">Access Bank</span>
+                                        </div>
+                                        <div class="py-3 flex justify-between items-center">
+                                            <span class="text-purple-secondary"> Account Number</span>
+                                            <span class="text-black">7979797979797979</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+
+                            
+
+                        </div>
+
+                    
+                    </main>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <script src="../src/js/script.js"></script>
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                document.getElementById('sidebar').classList.toggle('-translate-x-full');
+            });
+        </script>
+</body>
+
+</html>

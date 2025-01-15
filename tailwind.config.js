@@ -25,9 +25,16 @@ module.exports = {
     './src/forgot-password.html',
     './src/otp-verification.html',
     './src/reset-password.html',
+    './src/send-money-add-details.html',
+    './src/send-money-add-details-confirm.html',
+    './src/send-money-add-details-confirm-file.html',
+    './src/help-support.html',
   ],
   theme: {
     extend: {
+      screens: {
+        'xxl': '1568px', // Custom breakpoint at 1568px
+      },
       spacing: {
         '120': '120px', // Add custom padding-top 120px
       },
