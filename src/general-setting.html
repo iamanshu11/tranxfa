@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="min-h-screen shadow-b-md">
+    <div class="min-h-screen shadow-b-md bg-white">
         <!-- Header -->
         <header class="bg-white  p-4">
             <div class="container mx-auto flex items-center justify-between overflow-x-auto">
@@ -60,7 +60,7 @@
                     <ul class="p-6 space-y-4">
                         <li>
                             <a href="dashboard.html"
-                                class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                                class="flex items-center text-gray-700  font-medium hover:text-purple-secondary">
                                 <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
                                 <!-- Replace with your icon -->
                                 Dashboard
@@ -68,7 +68,7 @@
                         </li>
                         <li>
                             <a href="send-money.html"
-                                class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                                class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
                                 <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
                                 <!-- Replace with your icon -->
                                 Send Money
@@ -84,7 +84,7 @@
                         </li>
                         <li>
                             <a href="your-recipient.html"
-                                class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
                                 <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
                                 <!-- Replace with your icon -->
                                 Your Recipients
@@ -111,7 +111,8 @@
                             Other
                         </li>
                         <li>
-                            <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <a href="help-support.html"
+                                class="flex items-center text-gray-700 hover:text-purple-secondary">
                                 <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
                                 <!-- Replace with your icon -->
                                 Help & Support
@@ -125,7 +126,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center text-gray-700">
+                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
                                 <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
                                 <!-- Replace with your icon -->
                                 Log Out
@@ -141,21 +142,20 @@
 
                 </nav>
 
-                <div class="flex bg-[#F9FAFB]">
+                <div class="flex bg-[#F9FAFB] min-h-screen">
                     <!-- Sidebar for Desktop -->
-                    <aside class="hidden md:block w-1/4 p-6  shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
+                    <aside class="hidden md:block md:w-1/4 p-6 shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
                         <ul class="space-y-6">
                             <li>
                                 <a href="dashboard.html"
-                                    class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                                    class="flex items-center text-gray-700 hover:text-purple-secondary ">
                                     <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
                                     Dashboard
                                 </a>
                             </li>
                             <li>
                                 <a href="send-money.html"
-                                    class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                                    class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
                                     <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
                                     <!-- Replace with your icon -->
                                     Send Money
@@ -165,59 +165,44 @@
                                 <a href="your-trans.html"
                                     class="flex items-center text-gray-700 hover:text-purple-secondary">
                                     <img src="../images/dashboard/Transfer.png" alt="Transfers Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                        class="h-6 w-6 mr-2">
                                     Your Transfers
                                 </a>
                             </li>
                             <li>
                                 <a href="your-recipient.html"
-                                    class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                    class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
                                     <img src="../images/dashboard/people.png" alt="Recipients Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                        class="h-6 w-6 mr-2">
                                     Your Recipients
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
                                     <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                        class="h-6 w-6 mr-2">
                                     Account Verification
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
                                     <img src="../images/dashboard/settings.png" alt="Settings Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                                        class="h-6 w-6 mr-2">
                                     Account Settings
                                 </a>
                             </li>
-                            <!-- Other sidebar items with icons -->
-
                             <hr>
-
+                            <li>Other</li>
                             <li>
-
-                                Other
-                            </li>
-
-                            <li>
-                                <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                                <a href="help-support.html"
+                                    class="flex items-center text-gray-700 hover:text-purple-secondary">
                                     <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
                                     Help & Support
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/settings.png" alt="Settings Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                    Settings
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
                                     <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
                                     Log Out
                                 </a>
                             </li>
@@ -227,7 +212,6 @@
                                 class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[15px] hover:bg-black">Send
                                 Money</button>
                         </div>
-                        </ul>
                     </aside>
 
                     <!-- Main Content -->
@@ -335,9 +319,8 @@
 
                     
                     </main>
+
                 </div>
-
-
             </div>
         </section>
 

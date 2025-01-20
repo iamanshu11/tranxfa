@@ -365,3 +365,17 @@ document.addEventListener('click', function(event) {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const forms = document.querySelectorAll('.form-content');
+  forms.forEach(form => form.style.display = 'none'); // Initially hide all forms
+
+  window.showForm = function(formId, element) {
+      forms.forEach(form => {
+          if(form.id === formId) {
+              form.style.display = 'block'; // Show the clicked form
+          } else {
+              form.style.display = 'none'; // Hide other forms
+          }
+      });
+  };
+});

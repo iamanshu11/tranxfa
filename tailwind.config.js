@@ -29,6 +29,7 @@ module.exports = {
     './src/send-money-add-details-confirm.html',
     './src/send-money-add-details-confirm-file.html',
     './src/help-support.html',
+    './src/general-setting.html',
   ],
   theme: {
     extend: {
