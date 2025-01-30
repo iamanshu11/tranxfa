@@ -13,765 +13,825 @@
 
 
 <body>
+    <!-- Header -->
+    <header class="bg-white  p-4">
+        <div class="container mx-auto flex items-center justify-between overflow-x-auto">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="VeloxPays Logo" class="w-20">
+                </a>
+            </div>
 
-    <div class="min-h-screen shadow-b-md bg-white">
-        <!-- Header -->
-        <header class="bg-white  p-4">
-            <div class="container mx-auto flex items-center justify-between overflow-x-auto">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <a href="index.html">
-                        <img src="../images/logo.png" alt="VeloxPays Logo" class="w-20">
+            <!-- Profile Section / Burger Icon -->
+            <div class="flex items-center space-x-4">
+                <!-- Burger Icon (visible only on mobile) -->
+                <button class="block md:hidden text-gray-800" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+
+                <!-- Profile Icon and Name (visible only on desktop) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <!-- Clickable Profile Section -->
+                    <a href="#" class="flex items-center space-x-2">
+                        <!-- Profile Icon -->
+                        <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
+                            AS
+                        </div>
                     </a>
                 </div>
 
-                <!-- Profile Section / Burger Icon -->
-                <div class="flex items-center space-x-4">
-                    <!-- Burger Icon (visible only on mobile) -->
-                    <button class="block md:hidden text-gray-800" id="menu-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
+            </div>
+        </div>
 
-                    <!-- Profile Icon and Name (visible only on desktop) -->
-                    <div class="hidden md:flex items-center space-x-2">
-                        <!-- Clickable Profile Section -->
-                        <a href="#" class="flex items-center space-x-2">
-                            <!-- Profile Icon -->
-                            <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
-                            <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
-                                AS
-                            </div>
+        <nav class="fixed inset-y-0 left-0 bg-gray-100 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-20 md:hidden min-h-screen"
+            id="sidebar">
+            <ul class="p-6 space-y-4">
+                <li>
+                    <a href="dashboard.html"
+                        class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                        <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="send-money.html"
+                        class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                        <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Send Money
+                    </a>
+                </li>
+                <li>
+                    <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Your Transfers
+                    </a>
+                </li>
+                <li>
+                    <a href="your-recipient.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Your Recipients
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                            class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                        Account Verification
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Account Settings
+                    </a>
+                </li>
+                <hr>
+
+                <li>
+
+                    Other
+                </li>
+                <li>
+                    <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Help & Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center text-gray-700">
+                        <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Log Out
+                    </a>
+                </li>
+
+                <div class="mt-8">
+                    <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[20px] hover:bg-black">Send
+                        Money</button>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto flex">
+            <!-- Sidebar for Desktop -->
+            <aside class="hidden md:block w-1/4 py-6   shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
+                <ul class="space-y-6">
+                    <li>
+                        <a href="dashboard.html"
+                            class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                            <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Dashboard
                         </a>
+                    </li>
+                    <li>
+                        <a href="send-money.html"
+                            class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                            <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Send Money
+                        </a>
+                    </li>
+                    <li>
+                        <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Your Transfers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="your-recipient.html"
+                            class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Your Recipients
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                                class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                            Account Verification
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Account Settings
+                        </a>
+                    </li>
+                    <!-- Other sidebar items with icons -->
+
+                    <hr>
+
+                    <li>
+
+                        Other
+                    </li>
+
+                    <li>
+                        <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Help & Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-8">
+                    <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[15px] hover:bg-black">Send
+                        Money</button>
+                </div>
+                </ul>
+            </aside>
+
+            <section class=" bg-[#F9FAFB] flex w-full ">
+                <div class="container mx-auto ">
+                    <div class=" bg-[#F9FAFB]">
+                        <div class="flex-1 p-4 md:p-6">
+                            <!-- Welcome Section -->
+                            <div class="bg-white p-4 md:p-6 shadow-sm rounded-lg">
+                                <h1 class="text-3xl font-semibold text-[#8B1EC4] mb-2 flex items-center">
+                                    Welcome
+                                    <!-- <span class="ml-2">
+                                                <img src="../images/logo.png" alt="Dashboard Logo" class="h-15">
+                                            </span> -->
+                                </h1>
+
+                                <a href="#" class="flex items-center space-x-2 md:hidden mt-8 mb-8">
+
+                                    <!-- Profile Icon -->
+                                    <div
+                                        class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
+                                        AS
+                                    </div>
+                                    <!-- Profile Name and Arrow -->
+                                    <span class="flex items-center text-black font-semibold">
+                                        Anshuman Singh
+                                        <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
+                                    </span>
+                                </a>
+
+                                <p class="text-sm text-gray-500">Your account overview</p>
+                            </div>
+
+                            <!-- Transfer Calculator and Recipients Section -->
+                            <div class="mt-4 md:mt-6 lg:flex md:grid gap-6">
+                                <div class="bg-white p-4 md:p-6 shadow-sm rounded-lg w-full md:flex-1">
+                                    <form class="relative">
+                                        <!-- Input Section for Sending Money -->
+
+                                        <div class=" relative mt-2">
+                                            <!-- <label for="amount" class="block text-sm font-medium text-black px-2">You Send</label> -->
+                                            <div
+                                                class="flex items-center  border rounded-[20px] mt-2 relative bg-gray-50">
+                                                <input type="text" id="amount" placeholder=" $ 2500"
+                                                    class="w-full text-[22px] bg-gray-50 px-3 py-3 text-gray-800 focus:outline-none rounded-[20px] " />
+                                                <button type="button" id="currency-button"
+                                                    class="inline-flex items-center bg-gray-50 px-4 py-4 rounded-r-[20px]  focus:outline-none relative w-full max-w-max"
+                                                    onclick="toggleDropdown('currency-dropdown')">
+                                                    <img src="../images/money-flag/australia.png" alt="GBP Flag"
+                                                        class="h-8 mr-2" id="selected-flag" />
+                                                    <span id="selected-currency"
+                                                        class="text-sm font-medium mr-2">AUD</span>
+                                                    <svg id="dropdown-icon"
+                                                        class="w-5 h-5 text-gray-700 ml-2 transition-transform transform"
+                                                        fill="currentColor" stroke="currentColor" stroke-width="2"
+                                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M19 9l-7 7-7-7" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <!-- Currency Dropdown -->
+                                            <div id="currency-dropdown"
+                                                class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
+                                                <div class="p-2">
+                                                    <input type="text" id="currency-search"
+                                                        placeholder="Search currency..."
+                                                        class="w-full px-3 py-2 border rounded-md focus:outline-none"
+                                                        oninput="filterDropdown('currency-dropdown', 'currency-search')" />
+                                                </div>
+                                                <ul class="divide-y divide-gray-200">
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/australia.png', 'AUD')">
+                                                        <img src="../images/money-flag/australia.png" alt="AUD Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>AUD - Australian Dollar</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/bangladesh.png', 'BDT')">
+                                                        <img src="../images/money-flag/bangladesh.png" alt="BDT Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>BDT - Bangladeshi Taka</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/india.png', 'INR')">
+                                                        <img src="../images/money-flag/india.png" alt="INR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>INR - Indian Rupee</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/pakistan.png', 'PKR')">
+                                                        <img src="../images/money-flag/pakistan.png" alt="PAK Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>PKR - Pakistani Rupee </span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/nepal.png', 'NPR')">
+                                                        <img src="../images/money-flag/nepal.png" alt="NGN Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>NPR - Nepalese Rupee</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
+                                                        <img src="../images/money-flag/sri-lanka.png" alt="LKR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>LKR - Sri Lankan Rupee</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/malaysia.png', 'MYR')">
+                                                        <img src="../images/money-flag/malaysia.png" alt="MYR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>MYR - Malaysian Ringgit</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/phillipine.png', 'PHP')">
+                                                        <img src="../images/money-flag/phillipine.png" alt="PHP Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>PHP - Philippine Peso</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/viatnam.png', 'VND')">
+                                                        <img src="../images/money-flag/viatnam.png" alt="VND Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>VND - Vietnamese Dong</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectCurrency('../images/money-flag/fiji.png', 'FJD')">
+                                                        <img src="../images/money-flag/fiji.png" alt="FJD Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>FJD - Fijian dollar</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Transaction Breakdown -->
+                                        <div class="space-y-4 text-gray-600 p-[10px] relative">
+                                            <!-- Vertical Dotted Line -->
+                                            <div class="absolute left-[20px] top-0 bottom-0">
+                                                <div class="h-full border-l-2 border-dashed border-[#01133F]"></div>
+                                            </div>
+
+                                            <!-- Transaction Fees -->
+                                            <div class="flex justify-between items-center relative">
+                                                <div class="flex items-center space-x-2">
+                                                    <span
+                                                        class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">+</span>
+                                                    <span class="text-[#01133F]">£ 0.00</span>
+                                                </div>
+                                                <span class="text-md text-[#01133F]">Transaction fees</span>
+                                            </div>
+
+                                            <!-- Converted Amount -->
+                                            <div class="flex justify-between items-center relative">
+                                                <div class="flex items-center space-x-2">
+                                                    <span
+                                                        class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">></span>
+                                                    <span class="text-[#01133F]">£ 100.01</span>
+                                                </div>
+                                                <span class="text-md text-[#01133F]">Converted amount</span>
+                                            </div>
+
+                                            <!-- Exchange Rate -->
+                                            <div class="flex justify-between items-center relative">
+                                                <div class="flex items-center space-x-2">
+                                                    <span
+                                                        class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">x</span>
+                                                    <span class="text-[#01133F]y">20</span>
+                                                </div>
+                                                <span class="text-md text-[#01133F]">Exchange rate</span>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Input Section for Recipient Gets -->
+
+                                        <div class="mb-6 relative ">
+                                            <!-- <label for="recipient-amount" class="block text-sm font-medium text-black px-2">Recipient
+                                                    Gets</label> -->
+                                            <div
+                                                class="flex items-center border rounded-[20px] mt-2 relative bg-gray-50">
+                                                <input type="" id="recipient-amount" placeholder=" ₹ 2330.88"
+                                                    class="w-full text-[22px] px-3 py-2 bg-gray-50 text-gray-800 focus:outline-none rounded-[20px]" />
+                                                <button type="button" id="recipient-currency-button"
+                                                    class="inline-flex items-center bg-gray-50 px-4 py-4 rounded-r-[20px] focus:outline-none relative w-full max-w-max"
+                                                    onclick="toggleDropdown('recipient-currency-dropdown')">
+                                                    <img src="../images/money-flag/india.png" alt="NGN Flag"
+                                                        class="h-8 mr-2" id="recipient-flag" />
+                                                    <span id="recipient-currency"
+                                                        class="text-sm font-medium mr-2">INR</span>
+                                                    <svg class="w-5 h-5 text-gray-700 ml-2" id="dropdown-icon"
+                                                        fill="currentColor" stroke="currentColor" stroke-width="2"
+                                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M19 9l-7 7-7-7" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+
+                                            <!-- Recipient Currency Dropdown -->
+                                            <div id="recipient-currency-dropdown"
+                                                class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
+                                                <div class="p-2">
+                                                    <input type="text" id="recipient-currency-search"
+                                                        placeholder="Search currency..."
+                                                        class="w-full px-3 py-2 border rounded-md focus:outline-none"
+                                                        oninput="filterDropdown('recipient-currency-dropdown', 'recipient-currency-search')" />
+                                                </div>
+                                                <ul class="divide-y divide-gray-200">
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/australia.png', 'AUD')">
+                                                        <img src="../images/money-flag/australia.png" alt="AUD Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>AUD - Australian Dollar</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
+                                                        <img src="../images/money-flag/sri-lanka.png" alt="NGN Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>LKR - Sri Lankan Rupee</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/bangladesh.png', 'BDT')">
+                                                        <img src="../images/money-flag/bangladesh.png" alt="BDT Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>BDT - Bangladeshi Taka</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/india.png', 'INR')">
+                                                        <img src="../images/money-flag/india.png" alt="INR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>INR - Indian Rupee</span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/pakistan.png', 'PKR')">
+                                                        <img src="../images/money-flag/pakistan.png" alt="PKR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>PKR - Pakistani Rupee </span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/nepal.png', 'NPR')">
+                                                        <img src="../images/money-flag/nepal.png" alt="NPR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>NPR - Nepalese Rupee </span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/malaysia.png', 'MYR')">
+                                                        <img src="../images/money-flag/malaysia.png" alt="MYR Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>MYR - Malaysian Ringgit </span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/phillipine.png', 'PHP')">
+                                                        <img src="../images/money-flag/phillipine.png" alt="PHP Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>PHP - Philippine Peso </span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/viatnam.png', 'VND')">
+                                                        <img src="../images/money-flag/viatnam.png" alt="VND Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>VND - Vietnamese Dong </span>
+                                                    </li>
+                                                    <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                                                        onclick="selectRecipientCurrency('../images/money-flag/fiji.png', 'FJD')">
+                                                        <img src="../images/money-flag/fiji.png" alt="FJD Flag"
+                                                            class="h-8 mr-2" />
+                                                        <span>FJD - Fijian dollar </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Get Started Button -->
+                                        <button
+                                            class="w-full bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[20px] hover:bg-black ">
+                                            Send
+                                        </button>
+
+                                    </form>
+                                </div>
+
+                                <!-- Recipients List Section -->
+                                <div class="bg-white p-4 md:p-6 shadow-sm rounded-lg w-full md:flex-1 mt-4 md:mt-0">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h2 class="text-md text-[#8B1EC4] font-semibold">Your Recipients</h2>
+                                        <button
+                                            class="rounded-sm bg-[#8B1EC4] text-white hover:bg-[#8B1EC4] focus:outline-none focus:ring-2 focus:ring-opacity-50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 6v12m6-6H6" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="space-y-2 overflow-y-auto max-h-96">
+                                        <!-- Recipients list items -->
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                        <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
+                                            <div
+                                                class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
+                                                MJ
+                                            </div>
+                                            <div class="flex-grow">
+                                                <h4 class="font-semibold">Mary Johnson</h4>
+                                                <p class="text-sm text-gray-500">South Africa</p>
+                                            </div>
+                                            <span class="font-semibold text-gray-900">*****7845</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="bg-white mt-4 md:mt-6 shadow-sm rounded-lg responsive-table">
+                                <h2 class="text-xl font-semibold mb-2 p-4 md:p-6">Recent Transactions</h2>
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full leading-normal p-4 md:p-6">
+                                        <thead>
+                                            <tr>
+                                                <th
+                                                    class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider">
+                                                    Date
+                                                </th>
+                                                <th
+                                                    class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider md:block hidden">
+                                                    Order ID
+                                                </th>
+                                                <th
+                                                    class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider">
+                                                    Recipient
+                                                </th>
+                                                <th
+                                                    class="px-3 py-2 2 border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider">
+                                                    Amount
+                                                </th>
+                                                <th
+                                                    class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider hidden md:table-cell">
+                                                    Status
+                                                </th>
+                                                <th
+                                                    class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider hidden md:table-cell">
+                                                    View
+                                                </th>
+                                                <th
+                                                    class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider md:hidden">
+                                                    Status / View
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white">
+                                            <tr>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    2024-12-25
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
+                                                    26545664
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    Sarah Johnson
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    $500.00
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
+                                                    <a href="#"
+                                                        class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    2024-12-26
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
+                                                    45554554
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    Michael Smith
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    $780.00
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
+                                                    <a href="#"
+                                                        class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    2024-12-25
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
+                                                    54654455
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    Sarah Johnson
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    $500.00
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-yellow-100 text-yellow-800">Pending</span><br>
+                                                    <a href="#"
+                                                        class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    2024-12-25
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
+                                                    26545664
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    Sarah Johnson
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    $500.00
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
+                                                    <a href="#"
+                                                        class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    2024-12-26
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
+                                                    45554554
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    Michael Smith
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
+                                                    $780.00
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
+                                                </td>
+                                                <td
+                                                    class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
+                                                    <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
+                                                </td>
+                                                <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
+                                                    <span
+                                                        class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
+                                                    <a href="#"
+                                                        class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+
+                        </div>
                     </div>
 
+
                 </div>
-            </div>
-        </header>
+            </section>
 
-        <section class=" bg-[#F9FAFB] flex items-center">
-            <div class="container mx-auto   ">
-                <nav class="fixed inset-y-0 left-0 bg-gray-100 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-20 md:hidden min-h-screen"
-                    id="sidebar">
-                    <ul class="p-6 space-y-4">
-                        <li>
-                            <a href="dashboard.html" class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
-                                <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="send-money.html" class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
-                                <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Send Money
-                            </a>
-                        </li>
-                        <li>
-                            <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Your Transfers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="your-recipient.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Your Recipients
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
-                                    class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                Account Verification
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Account Settings
-                            </a>
-                        </li>
-                        <hr>
-
-                        <li>
-
-                            Other
-                        </li>
-                        <li>
-                            <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Help & Support
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center text-gray-700">
-                                <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
-                                <!-- Replace with your icon -->
-                                Log Out
-                            </a>
-                        </li>
-
-                        <div class="mt-8">
-                            <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[20px] hover:bg-black">Send
-                                Money</button>
-                        </div>
-                    </ul>
-
-                </nav>
-
-                <div class="flex bg-[#F9FAFB]">
-                    <!-- Sidebar for Desktop -->
-                    <aside class="hidden md:block w-1/4 p-6  shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
-                        <ul class="space-y-6">
-                            <li>
-                                <a href="dashboard.html" class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
-                                    <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="send-money.html" class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
-                                    <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
-                                    Send Money
-                                </a>
-                            </li>
-                            <li>
-                                <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/Transfer.png" alt="Transfers Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                    Your Transfers
-                                </a>
-                            </li>
-                            <li>
-                                <a href="your-recipient.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/people.png" alt="Recipients Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                    Your Recipients
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                    Account Verification
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/settings.png" alt="Settings Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                    Account Settings
-                                </a>
-                            </li>
-                            <!-- Other sidebar items with icons -->
-
-                            <hr>
-
-                            <li>
-
-                                Other
-                            </li>
-
-                            <li>
-                                <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
-                                    Help & Support
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/settings.png" alt="Settings Icon"
-                                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
-                                    Settings
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
-                                    <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
-                                    <!-- Replace with your icon -->
-                                    Log Out
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="mt-8">
-                            <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[15px] hover:bg-black">Send
-                                Money</button>
-                        </div>
-                        </ul>
-                    </aside>
-
-                    <!-- Main Content -->
-                    <main class="flex-1 p-4 md:p-6">
-                        <!-- Welcome Section -->
-                        <div class="bg-white p-4 md:p-6 shadow-sm rounded-lg">
-                            <h1 class="text-3xl font-semibold text-[#8B1EC4] mb-2 flex items-center">
-                                Welcome 
-                                <!-- <span class="ml-2">
-                                    <img src="../images/logo.png" alt="Dashboard Logo" class="h-15">
-                                </span> -->
-                            </h1>
-
-                            <a href="#" class="flex items-center space-x-2 md:hidden mt-8 mb-8">
-
-                                <!-- Profile Icon -->
-                                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
-                                    AS
-                                </div>
-                                <!-- Profile Name and Arrow -->
-                                <span class="flex items-center text-black font-semibold">
-                                    Anshuman Singh
-                                    <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
-                                </span>
-                            </a>
-                            
-                            <p class="text-sm text-gray-500">Your account overview</p>
-                        </div>
-
-                        <!-- Transfer Calculator and Recipients Section -->
-                        <div class="mt-4 md:mt-6 lg:flex md:grid gap-6">
-                            <div class="bg-white p-4 md:p-6 shadow-sm rounded-lg w-full md:flex-1">
-                                <form class="relative">
-                                    <!-- Input Section for Sending Money -->
-
-                                    <div class=" relative mt-2">
-                                        <!-- <label for="amount" class="block text-sm font-medium text-black px-2">You Send</label> -->
-                                        <div class="flex items-center  border rounded-[20px] mt-2 relative bg-gray-50">
-                                            <input type="text" id="amount" placeholder=" $ 2500"
-                                                class="w-full text-[22px] bg-gray-50 px-3 py-3 text-gray-800 focus:outline-none rounded-[20px] " />
-                                            <button type="button" id="currency-button"
-                                                class="inline-flex items-center bg-gray-50 px-4 py-4 rounded-r-[20px]  focus:outline-none relative w-full max-w-max"
-                                                onclick="toggleDropdown('currency-dropdown')">
-                                                <img src="../images/money-flag/australia.png" alt="GBP Flag"
-                                                    class="h-8 mr-2" id="selected-flag" />
-                                                <span id="selected-currency" class="text-sm font-medium mr-2">AUD</span>
-                                                <svg id="dropdown-icon"
-                                                    class="w-5 h-5 text-gray-700 ml-2 transition-transform transform"
-                                                    fill="currentColor" stroke="currentColor" stroke-width="2"
-                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19 9l-7 7-7-7" />
-                                                </svg>
-                                            </button>
-                                        </div>
-
-                                        <!-- Currency Dropdown -->
-                                        <div id="currency-dropdown"
-                                            class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
-                                            <div class="p-2">
-                                                <input type="text" id="currency-search" placeholder="Search currency..."
-                                                    class="w-full px-3 py-2 border rounded-md focus:outline-none"
-                                                    oninput="filterDropdown('currency-dropdown', 'currency-search')" />
-                                            </div>
-                                            <ul class="divide-y divide-gray-200">
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/australia.png', 'AUD')">
-                                                    <img src="../images/money-flag/australia.png" alt="AUD Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>AUD - Australian Dollar</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/bangladesh.png', 'BDT')">
-                                                    <img src="../images/money-flag/bangladesh.png" alt="BDT Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>BDT - Bangladeshi Taka</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/india.png', 'INR')">
-                                                    <img src="../images/money-flag/india.png" alt="INR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>INR - Indian Rupee</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/pakistan.png', 'PKR')">
-                                                    <img src="../images/money-flag/pakistan.png" alt="PAK Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>PKR - Pakistani Rupee </span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/nepal.png', 'NPR')">
-                                                    <img src="../images/money-flag/nepal.png" alt="NGN Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>NPR - Nepalese Rupee</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
-                                                    <img src="../images/money-flag/sri-lanka.png" alt="LKR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>LKR - Sri Lankan Rupee</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/malaysia.png', 'MYR')">
-                                                    <img src="../images/money-flag/malaysia.png" alt="MYR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>MYR - Malaysian Ringgit</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/phillipine.png', 'PHP')">
-                                                    <img src="../images/money-flag/phillipine.png" alt="PHP Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>PHP - Philippine Peso</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/viatnam.png', 'VND')">
-                                                    <img src="../images/money-flag/viatnam.png" alt="VND Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>VND - Vietnamese Dong</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectCurrency('../images/money-flag/fiji.png', 'FJD')">
-                                                    <img src="../images/money-flag/fiji.png" alt="FJD Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>FJD - Fijian dollar</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Transaction Breakdown -->
-                                    <div class="space-y-4 text-gray-600 p-[10px] relative">
-                                        <!-- Vertical Dotted Line -->
-                                        <div class="absolute left-[20px] top-0 bottom-0">
-                                            <div class="h-full border-l-2 border-dashed border-[#01133F]"></div>
-                                        </div>
-
-                                        <!-- Transaction Fees -->
-                                        <div class="flex justify-between items-center relative">
-                                            <div class="flex items-center space-x-2">
-                                                <span
-                                                    class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">+</span>
-                                                <span class="text-[#01133F]">£ 0.00</span>
-                                            </div>
-                                            <span class="text-md text-[#01133F]">Transaction fees</span>
-                                        </div>
-
-                                        <!-- Converted Amount -->
-                                        <div class="flex justify-between items-center relative">
-                                            <div class="flex items-center space-x-2">
-                                                <span
-                                                    class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">></span>
-                                                <span class="text-[#01133F]">£ 100.01</span>
-                                            </div>
-                                            <span class="text-md text-[#01133F]">Converted amount</span>
-                                        </div>
-
-                                        <!-- Exchange Rate -->
-                                        <div class="flex justify-between items-center relative">
-                                            <div class="flex items-center space-x-2">
-                                                <span
-                                                    class="relative z-10 text-gray-400 bg-[#01133F] rounded-full px-[9px] py-[4px] text-[12px]">x</span>
-                                                <span class="text-[#01133F]y">20</span>
-                                            </div>
-                                            <span class="text-md text-[#01133F]">Exchange rate</span>
-                                        </div>
-                                    </div>
+        </div>
 
 
-                                    <!-- Input Section for Recipient Gets -->
-
-                                    <div class="mb-6 relative ">
-                                        <!-- <label for="recipient-amount" class="block text-sm font-medium text-black px-2">Recipient
-                                        Gets</label> -->
-                                        <div class="flex items-center border rounded-[20px] mt-2 relative bg-gray-50">
-                                            <input type="" id="recipient-amount" placeholder=" ₹ 2330.88"
-                                                class="w-full text-[22px] px-3 py-2 bg-gray-50 text-gray-800 focus:outline-none rounded-[20px]" />
-                                            <button type="button" id="recipient-currency-button"
-                                                class="inline-flex items-center bg-gray-50 px-4 py-4 rounded-r-[20px] focus:outline-none relative w-full max-w-max"
-                                                onclick="toggleDropdown('recipient-currency-dropdown')">
-                                                <img src="../images/money-flag/india.png" alt="NGN Flag"
-                                                    class="h-8 mr-2" id="recipient-flag" />
-                                                <span id="recipient-currency"
-                                                    class="text-sm font-medium mr-2">INR</span>
-                                                <svg class="w-5 h-5 text-gray-700 ml-2" id="dropdown-icon"
-                                                    fill="currentColor" stroke="currentColor" stroke-width="2"
-                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M19 9l-7 7-7-7" />
-                                                </svg>
-                                            </button>
-                                        </div>
+    </main>
 
 
-                                        <!-- Recipient Currency Dropdown -->
-                                        <div id="recipient-currency-dropdown"
-                                            class="hidden absolute top-full left-0 w-full border border-gray-300 bg-white rounded-md shadow-lg z-50 max-h-80 overflow-y-auto">
-                                            <div class="p-2">
-                                                <input type="text" id="recipient-currency-search"
-                                                    placeholder="Search currency..."
-                                                    class="w-full px-3 py-2 border rounded-md focus:outline-none"
-                                                    oninput="filterDropdown('recipient-currency-dropdown', 'recipient-currency-search')" />
-                                            </div>
-                                            <ul class="divide-y divide-gray-200">
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/australia.png', 'AUD')">
-                                                    <img src="../images/money-flag/australia.png" alt="AUD Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>AUD - Australian Dollar</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
-                                                    <img src="../images/money-flag/sri-lanka.png" alt="NGN Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>LKR - Sri Lankan Rupee</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/bangladesh.png', 'BDT')">
-                                                    <img src="../images/money-flag/bangladesh.png" alt="BDT Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>BDT - Bangladeshi Taka</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/india.png', 'INR')">
-                                                    <img src="../images/money-flag/india.png" alt="INR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>INR - Indian Rupee</span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/pakistan.png', 'PKR')">
-                                                    <img src="../images/money-flag/pakistan.png" alt="PKR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>PKR - Pakistani Rupee </span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/nepal.png', 'NPR')">
-                                                    <img src="../images/money-flag/nepal.png" alt="NPR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>NPR - Nepalese Rupee </span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/malaysia.png', 'MYR')">
-                                                    <img src="../images/money-flag/malaysia.png" alt="MYR Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>MYR - Malaysian Ringgit </span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/phillipine.png', 'PHP')">
-                                                    <img src="../images/money-flag/phillipine.png" alt="PHP Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>PHP - Philippine Peso </span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/viatnam.png', 'VND')">
-                                                    <img src="../images/money-flag/viatnam.png" alt="VND Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>VND - Vietnamese Dong </span>
-                                                </li>
-                                                <li class="p-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                                                    onclick="selectRecipientCurrency('../images/money-flag/fiji.png', 'FJD')">
-                                                    <img src="../images/money-flag/fiji.png" alt="FJD Flag"
-                                                        class="h-8 mr-2" />
-                                                    <span>FJD - Fijian dollar </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Get Started Button -->
-                                    <button
-                                        class="w-full bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[20px] hover:bg-black ">
-                                        Send
-                                    </button>
-
-                                </form>
-                            </div>
-
-                            <!-- Recipients List Section -->
-                            <div class="bg-white p-4 md:p-6 shadow-sm rounded-lg w-full md:flex-1 mt-4 md:mt-0">
-                                <div class="flex justify-between items-center mb-4">
-                                    <h2 class="text-md text-[#8B1EC4] font-semibold">Your Recipients</h2>
-                                    <button class="rounded-sm bg-[#8B1EC4] text-white hover:bg-[#8B1EC4] focus:outline-none focus:ring-2 focus:ring-opacity-50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-6 w-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <ul class="space-y-2 overflow-y-auto max-h-96">
-                                    <!-- Recipients list items -->
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                    <li class="flex items-center bg-[#F9FAFB] rounded-md p-3 shadow">
-                                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold  mr-4">
-                                            MJ
-                                        </div>
-                                        <div class="flex-grow">
-                                            <h4 class="font-semibold">Mary Johnson</h4>
-                                            <p class="text-sm text-gray-500">South Africa</p>
-                                        </div>
-                                        <span class="font-semibold text-gray-900">*****7845</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="bg-white mt-4 md:mt-6 shadow-sm rounded-lg responsive-table">
-                            <h2 class="text-xl font-semibold mb-2 p-4 md:p-6">Recent Transactions</h2>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full leading-normal p-4 md:p-6">
-                                    <thead>
-                                        <tr>
-                                            <th class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider">
-                                                Date
-                                            </th>
-                                            <th class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider md:block hidden">
-                                                Order ID
-                                            </th>
-                                            <th class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider">
-                                                Recipient
-                                            </th>
-                                            <th class="px-3 py-2 2 border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider">
-                                                Amount
-                                            </th>
-                                            <th class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider hidden md:table-cell">
-                                                Status
-                                            </th>
-                                            <th class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider hidden md:table-cell">
-                                                View
-                                            </th>
-                                            <th class="px-3 py-2  border-gray-200 bg-[#F9FAFB] text-left text-xs font-semibold text-gray-600  tracking-wider md:hidden">
-                                                Status / View
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="bg-white">
-                                        <tr>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                2024-12-25
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
-                                                26545664
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                Sarah Johnson
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                $500.00
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                2024-12-26
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
-                                                45554554
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                Michael Smith
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                $780.00
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                2024-12-25
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
-                                                54654455
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                Sarah Johnson
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                $500.00
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <span class="py-1 px-3 rounded-full bg-yellow-100 text-yellow-800">Pending</span>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
-                                                <span class="py-1 px-3 rounded-full bg-yellow-100 text-yellow-800">Pending</span><br>
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                2024-12-25
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
-                                                26545664
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                Sarah Johnson
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                $500.00
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                2024-12-26
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:block hidden">
-                                                45554554
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                Michael Smith
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm">
-                                                $780.00
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm hidden md:table-cell">
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800 ">Details</a>
-                                            </td>
-                                            <td class="px-3 py-2 border-b border-[#F9FAFB] text-sm md:hidden">
-                                                <span class="py-1 px-3 rounded-full bg-green-100 text-green-800">Completed</span><br>
-                                                <a href="#" class="text-[#1581DA] hover:text-blue-800  ml-7">Details</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                    </main>
-                </div>
 
 
-            </div>
-        </section>
-
-
-        <script src="../src/js/script.js"></script>
-        <script>
-            document.getElementById('menu-toggle').addEventListener('click', function () {
-                document.getElementById('sidebar').classList.toggle('-translate-x-full');
-            });
-        </script>
+    <script src="../src/js/script.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+        });
+    </script>
 </body>
 
 </html>
