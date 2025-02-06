@@ -30,6 +30,20 @@ module.exports = {
     './src/send-money-add-details-confirm-file.html',
     './src/help-support.html',
     './src/general-setting.html',
+    './src/account-verification.html',
+    './src/account-verification-address.html',
+    './src/account-verification-identity.html',
+    './src/account-verification-fund.html',
+    './src/account-verification-identity-passport.html',
+    './src/account-verification-identity-driver-license.html',
+    './src/account-verification-identity-national-id.html',
+    './src/account-verification-identity-passport-verified.html',
+    './src/account-verification-identity-telephone.html',
+    './src/account-verification-identity-gas.html',
+    './src/account-verification-identity-electricity.html',
+    './src/account-verification-identity-water.html',
+    './src/account-verification-identity-income-tax.html',
+
   ],
   theme: {
     extend: {
