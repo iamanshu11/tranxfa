@@ -43,6 +43,7 @@ module.exports = {
     './src/account-verification-identity-electricity.html',
     './src/account-verification-identity-water.html',
     './src/account-verification-identity-income-tax.html',
+    './src/send-money-add-details-confirm-success.html',
 
   ],
   theme: {

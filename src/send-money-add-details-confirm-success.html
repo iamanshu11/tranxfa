@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranxfa</title>
+
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../src/custom.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- Header -->
+    <header class="bg-white  p-4">
+        <div class="container mx-auto flex items-center justify-between overflow-x-auto">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="VeloxPays Logo" class="w-20">
+                </a>
+            </div>
+
+            <!-- Profile Section / Burger Icon -->
+            <div class="flex items-center space-x-4">
+                <!-- Burger Icon (visible only on mobile) -->
+                <button class="block md:hidden text-gray-800" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+
+                <!-- Profile Icon and Name (visible only on desktop) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <!-- Clickable Profile Section -->
+                    <a href="#" class="flex items-center space-x-2">
+                        <!-- Profile Icon -->
+                        <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
+                            AS
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="fixed inset-y-0 left-0 bg-gray-100 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-20 md:hidden min-h-screen"
+        id="sidebar">
+        <ul class="p-6 space-y-4">
+            <li>
+                <a href="dashboard.html"
+                    class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                    <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="send-money.html"
+                    class="flex items-center text-purple-secondary font-medium hover:text-purple-secondary">
+                    <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Send Money
+                </a>
+            </li>
+            <li>
+                <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                    <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Your Transfers
+                </a>
+            </li>
+            <li>
+                <a href="your-recipient.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                    <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Your Recipients
+                </a>
+            </li>
+            <li>
+                <a href="account-verification.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                    <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                        class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                    Account Verification
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                    <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Account Settings
+                </a>
+            </li>
+            <hr>
+
+            <li>
+
+                Other
+            </li>
+            <li>
+                <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                    <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Help & Support
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                    <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Settings
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center text-gray-700">
+                    <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                    <!-- Replace with your icon -->
+                    Log Out
+                </a>
+            </li>
+
+            <div class="mt-8">
+                <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[20px] hover:bg-black">Send
+                    Money</button>
+            </div>
+        </ul>
+
+    </nav>
+
+    <div class="flex ml-0">
+        <!-- Sidebar for Desktop -->
+        <aside class="hidden md:block bg-white w-1/3    shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
+            <div class="bg-purple-800 text-white h-screen flex flex-col justify-center py-8">
+                <div class="pl-6 space-y-4">
+                    <h1 class="text-2xl font-bold mb-2">Download the DemoApp App</h1>
+                    <ul class="list-disc ml-5">
+                        <li>Make transfers on the spot</li>
+                        <li>Find your receivers easily</li>
+                        <li>Enjoy more delivery options</li>
+                        <li>Get instant transfer status notifications</li>
+                    </ul>
+                </div>
+                <div class="flex items-center space-x-4 pl-6 pr-6  mt-10">
+                    <a href="#"
+                        class="flex items-center w-48 h-14 bg-black pl-[25px] text-white rounded-md shadow-lg hover:bg-gray-800">
+                        <img src="../images/apple.png" alt="Apple Logo" class="w-6 h-6 mr-2" />
+                        <div class="flex flex-col justify-center">
+                            <span class="text-xs">Download on the</span>
+                            <span class="text-sm font-semibold">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="flex items-center w-48 h-14 bg-black pl-[25px] text-white rounded-md shadow-lg hover:bg-gray-800">
+                        <img src="../images/play-store.png" alt="Google Play Logo" class="w-6 h-6 mr-2" />
+                        <div class="flex flex-col justify-center">
+                            <span class="text-xs">GET IT ON</span>
+                            <span class="text-sm font-semibold">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <section class="flex-1 flex items-center justify-center w-full relative p-4 md:p-6">
+            <div class="mt-4 md:mt-6 flex xl:flex-row flex-col justify-center  gap-6">
+                <div class=" w-full p-10 md:p-10">
+                    <!-- <h2 class="text-4xl text-center font-bold text-[#00EA0C] mb-6"></h2> -->
+                    <p class="font-semibold mb-2 text-center">Please check your email to verify your account and complete your
+                        registration <br>
+                        Click the button below if you not received verification email.</p>
+        
+                    <a href="send-money-add-details-confirm-file.html" class="flex items-center justify-center">
+                        <button
+                            class="w-full max-w-md bg-purple-secondary text-white text-lg font-medium py-4 mt-6 rounded-[10px] hover:bg-black ">
+                            View Transfer
+                        </button>
+        
+                    </a>
+                    <p class="font-semibold mb-2 text-center mt-5">Please email our support at demo@remitso.com or call +44 000 000 0000 for any questions or query.</p>
+
+                    <p class="block md:hidden font-semibold mb-2 text-center mt-5">By using this website, you accept our Terms of Use and Privacy Policy. Copyright 2022 DemoApp.</p>
+
+                    <p class="hidden md:block absolute bottom-24 left-24  font-semibold mb-2 text-center mt-5">By using this website, you accept our Terms of Use and Privacy Policy. Copyright 2022 DemoApp.
+                    </p>
+                </div>
+                <div class="block md:hidden w-full">
+                    <div class="bg-purple-800 text-white  flex flex-col justify-center py-16">
+                        <div class="pl-6 px-4 space-y-4">
+                            <h1 class="text-2xl font-bold mb-2 ml-2">Download the DemoApp App</h1>
+                            <ul class="list-disc ml-10">
+                                <li>Make transfers on the spot</li>
+                                <li>Find your receivers easily</li>
+                                <li>Enjoy more delivery options</li>
+                                <li>Get instant transfer status notifications</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center space-x-4 pl-6  mt-10">
+                            <a href="#"
+                                class="flex items-center w-48 h-14 bg-black py-4 px-2 text-white rounded-md shadow-lg hover:bg-gray-800">
+                                <img src="../images/apple.png" alt="Apple Logo" class="w-6 h-6 mr-2" />
+                                <div class="flex flex-col justify-center">
+                                    <span class="text-xs">Download on the</span>
+                                    <span class="text-sm font-semibold">App Store</span>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="flex items-center w-48 h-14 bg-black py-4 px-2 text-white rounded-md shadow-lg hover:bg-gray-800">
+                                <img src="../images/play-store.png" alt="Google Play Logo" class="w-6 h-6 mr-2" />
+                                <div class="flex flex-col justify-center">
+                                    <span class="text-xs">GET IT ON</span>
+                                    <span class="text-sm font-semibold">Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../src/js/script.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+        });
+    </script>
+</body>
+
+</html>
