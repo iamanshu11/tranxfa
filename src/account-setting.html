@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranxfa</title>
+
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../src/custom.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- Header -->
+    <header class="bg-white  p-4">
+        <div class="container mx-auto flex items-center justify-between overflow-x-auto">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="VeloxPays Logo" class="w-20">
+                </a>
+            </div>
+
+            <!-- Profile Section / Burger Icon -->
+            <div class="flex items-center space-x-4">
+                <!-- Burger Icon (visible only on mobile) -->
+                <button class="block md:hidden text-gray-800" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+
+                <!-- Profile Icon and Name (visible only on desktop) -->
+                <div class="hidden md:flex items-center space-x-2">
+                    <!-- Clickable Profile Section -->
+                    <a href="#" class="flex items-center space-x-2">
+                        <!-- Profile Icon -->
+                        <img src="../images/notification.png" alt="Arrow" class="ml-2 w-6 h-6">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-[#8B1EC4] text-white font-bold">
+                            AS
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="fixed inset-y-0 left-0 bg-gray-100 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-20 md:hidden min-h-screen"
+            id="sidebar">
+            <ul class="p-6 space-y-4">
+                <li>
+                    <a href="dashboard.html"
+                        class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                        <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="send-money.html"
+                        class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                        <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Send Money
+                    </a>
+                </li>
+                <li>
+                    <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Your Transfers
+                    </a>
+                </li>
+                <li>
+                    <a href="your-recipient.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Your Recipients
+                    </a>
+                </li>
+                <li>
+                    <a href="account-verification.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                            class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                        Account Verification
+                    </a>
+                </li>
+                <li>
+                    <a href="account-setting.html" class="flex items-center text-purple-secondary hover:text-purple-secondary">
+                        <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Account Settings
+                    </a>
+                </li>
+                <hr>
+
+                <li>
+
+                    Other
+                </li>
+                <li>
+                    <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Help & Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                        <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center text-gray-700">
+                        <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                        <!-- Replace with your icon -->
+                        Log Out
+                    </a>
+                </li>
+
+                <div class="mt-8">
+                    <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[20px] hover:bg-black">Send
+                        Money</button>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto flex">
+            <!-- Sidebar for Desktop -->
+            <aside class="hidden md:block w-1/4 py-6   shadow-[18px 0 12px -16px rgba(0,0,0,0.1)]">
+                <ul class="space-y-6">
+                    <li>
+                        <a href="dashboard.html"
+                            class="flex items-center  text-gray-700 font-medium hover:text-purple-secondary">
+                            <img src="../images/dashboard/Home.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="send-money.html"
+                            class="flex items-center text-gray-700 font-medium hover:text-purple-secondary">
+                            <img src="../images/dashboard/send.png" alt="Dashboard Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Send Money
+                        </a>
+                    </li>
+                    <li>
+                        <a href="your-trans.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/Transfer.png" alt="Transfers Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Your Transfers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="your-recipient.html"
+                            class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/people.png" alt="Recipients Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Your Recipients
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-verification.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/protection-verification.png" alt="Verification Icon"
+                                class="h-6 w-6 mr-2"> <!-- Replace with your icon -->
+                            Account Verification
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-setting.html" class="flex items-center text-purple-secondary hover:text-purple-secondary">
+                            <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Account Settings
+                        </a>
+                    </li>
+                    <!-- Other sidebar items with icons -->
+
+                    <hr>
+
+                    <li>
+
+                        Other
+                    </li>
+
+                    <li>
+                        <a href="help-support.html" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/help.png" alt="Help Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Help & Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/settings.png" alt="Settings Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center text-gray-700 hover:text-purple-secondary">
+                            <img src="../images/dashboard/Logout.png" alt="Logout Icon" class="h-6 w-6 mr-2">
+                            <!-- Replace with your icon -->
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+                <div class="mt-8">
+                    <button class="w-full bg-purple-secondary text-white py-2 px-4 rounded-[15px] hover:bg-black">Send
+                        Money</button>
+                </div>
+                </ul>
+            </aside>
+
+            <section class=" bg-[#F9FAFB] flex w-full ">
+                <div class="container mx-auto ">
+                    <div class=" ">
+                        <div class="flex-1 p-4 md:p-6">
+                            <div class="p-5 bg-white rounded-lg  max-w-full">
+                                <div class="bg-gray-300 rounded-[10px] border-b  max-w-fit">
+                                    <button id="defaultOpen" class="tablink py-2 px-4 font-semibold rounded-[10px] bg-white" onclick="openTab(event, 'General')">General Preferences</button>
+                                    <button class="tablink py-2 px-4 font-semibold  rounded-[10px] bg-gray-300" onclick="openTab(event, 'Security')">Signing In</button>
+                                    <button class="tablink py-2 px-4 font-semibold rounded-[10px] bg-gray-300" onclick="openTab(event, 'Verification')">Two-Step Verification</button>
+                                    <button class="tablink py-2 px-4 font-semibold rounded-[10px] bg-gray-300" onclick="openTab(event, 'Devices')">Recent Devices</button>
+                                </div>
+                                <div id="General" class="tabcontent p-4 bg-white" style="display:block;">
+                                    <a href="account-setting-general-setting.html" class="py-4 bg-purple-secondary  px-2 mt-2 rounded-[10px]  max-w-lg flex items-center justify-between">
+                                        <div class="">
+                                            <p class="text-white">Language</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-white">English</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="account-setting-general-setting.html" class="py-4 bg-purple-secondary  px-2 mt-2 rounded-[10px]  max-w-lg flex items-center justify-between">
+                                        <div class="">
+                                            <p class="text-white">Timezone</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-white">GMT +05:30 Calcutta</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+            
+                                </div>
+                                <div id="Security" class="tabcontent p-4 bg-white" style="display:none;">
+                                    <a href="account-setting-email.html" class="py-4 bg-purple-secondary  px-2 mt-2 rounded-[10px]  max-w-lg flex items-center justify-between">
+                                        <div class="">
+                                            <p class="text-white">Email</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-white">custom@gmail.com</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+
+                                    <a href="account-setting-password.html" class="py-4 bg-purple-secondary  px-2 mt-2 rounded-[10px]  max-w-lg flex items-center justify-between">
+                                        <div class="">
+                                            <p class="text-white">Password</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-white">Last Changed <span class="italic font-normal text-sm text-gray-400">Never</span></p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                    <p class="font-normal text-md text-black mt-4">Last login: 31 minutes ago from 106.51.64.217</p>
+                                </div>
+                                <div id="Verification" class="tabcontent p-4 bg-white" style="display:none;">
+                                    <h2 class="font-bold text-lg">2-Step Verification</h2>
+                                    <p>Each time you sign in to your Account, you'll need your password and a 4 digit PIN code. Even if <br> someone else gets your password, it won't be enough to sign in to your account.</p>
+
+                                    <div class="flex items-center gap-4 py-4  mt-4">
+                                        <img src="../images/security.svg">
+                                        <div class="">
+                                            <h2 class="font-semibold text-md">Add an Extra layer of security.</h2>
+                                            <p>Enter your password and unique verification code that's sent to your phone.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-4 py-4  mt-4">
+                                        <img src="../images/bad-guy.svg">
+                                        <div class="">
+                                            <h2 class="font-semibold text-md">Add an Extra layer of security.</h2>
+                                            <p>Enter your password and unique verification code that's sent to your phone.</p>
+                                        </div>
+                                    </div>
+                                    <a href="factor-auth-code.html" class="max-w-fit bg-purple-secondary text-white mt-4 py-2 px-4 rounded-[15px] hover:bg-black">Send
+                                        Enable</a>
+                                  
+                                </div>
+                                <div id="Devices" class="tabcontent p-4 bg-white" style="display:none;">
+                                    <h2 class="font-bold text-lg">Active Sessions</h2>
+                                    <p>These sessions have been active on your account in the last 28 days, or are currently signed in.</p>
+                                    <div class="py-5 mt-5 mb-5  max-w-4xl ">
+                                        <div class="overflow-x-auto">
+                                            <table class="w-full">
+                                                <thead class="bg-purple-secondary text-white">
+                                                    <tr>
+                                                        <th class="px-4 py-2 text-left">Signed In</th>
+                                                        <th class="px-4 py-2 text-left">Device</th>
+                                                        <th class="px-4 py-2 text-left">Brand</th>
+                                                        <th class="px-4 py-2 text-left">Model</th>
+                                                        <th class="px-4 py-2 text-left">Last Used</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="bg-blue-100">
+                                                    <tr>
+                                                        <td class="px-4 py-2">24 minutes ago</td>
+                                                        <td class="px-4 py-2">Windows 10</td>
+                                                        <td class="px-4 py-2">Microsoft</td>
+                                                        <td class="px-4 py-2">Surface</td>
+                                                        <td class="px-4 py-2">07:40 AM</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="account-setting-recent-devices.html" class="max-w-fit bg-purple-secondary text-white mt-4 py-2 px-4 rounded-[15px] hover:bg-black">See All
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+    <script src="../src/js/script.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
+        });
+    </script>
+</body>
+
+</html>

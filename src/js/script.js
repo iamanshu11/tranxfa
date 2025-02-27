@@ -379,3 +379,23 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   };
 });
+
+
+function openTab(event, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none"; // Hide all tab content
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace("bg-white", "bg-gray-300"); // Revert all tabs to grey
+  }
+  document.getElementById(tabName).style.display = "block"; // Show the current tab content
+  event.currentTarget.className = event.currentTarget.className.replace("bg-gray-300", "bg-white"); // Set the clicked tab to white
+}
+
+// Function to initialize the page with the 'General' tab open
+function initTab() {
+  document.getElementById('defaultOpen').click();
+}

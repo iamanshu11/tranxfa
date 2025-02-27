@@ -44,6 +44,10 @@ module.exports = {
     './src/account-verification-identity-water.html',
     './src/account-verification-identity-income-tax.html',
     './src/send-money-add-details-confirm-success.html',
+    './src/account-setting.html',
+    './src/account-setting-recent-devices',
+    './src/account-setting-email',
+    './src/account-setting-password',
 
   ],
   theme: {
