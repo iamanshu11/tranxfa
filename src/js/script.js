@@ -399,3 +399,28 @@ function openTab(event, tabName) {
 function initTab() {
   document.getElementById('defaultOpen').click();
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const customSlider = new Swiper('.custom-slider', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+          640: {
+              slidesPerView: 1,
+          },
+          768: {
+              slidesPerView: 1,
+          },
+          1024: {
+              slidesPerView: 1,
+          },
+      },
+  });
+});

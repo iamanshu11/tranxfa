@@ -48,6 +48,9 @@ module.exports = {
     './src/account-setting-recent-devices',
     './src/account-setting-email',
     './src/account-setting-password',
+    './src/about-us.html',
+    './src/how-it.html',
+    './src/home-send-money.html',
 
   ],
   theme: {
