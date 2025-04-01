@@ -667,14 +667,6 @@ html,
   top: 100%;
 }
 
-.left-\[50\%\]{
-  left: 50%;
-}
-
-.top-16{
-  top: 4rem;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -711,6 +703,10 @@ html,
 
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-12{
@@ -823,10 +819,6 @@ html,
 
 .mt-\[80px\]{
   margin-top: 80px;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .block{
@@ -1168,6 +1160,10 @@ html,
   align-items: flex-start;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1178,6 +1174,10 @@ html,
 
 .justify-start{
   justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -1394,14 +1394,6 @@ html,
   border-left-width: 2px;
 }
 
-.border-b-2{
-  border-bottom-width: 2px;
-}
-
-.border-t-2{
-  border-top-width: 2px;
-}
-
 .border-dashed{
   border-style: dashed;
 }
@@ -1462,16 +1454,6 @@ html,
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity, 1));
-}
-
-.border-purple-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(147 51 234 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#00f942\]{
@@ -1725,6 +1707,11 @@ html,
   padding-right: 1.5rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[9px\]{
   padding-left: 9px;
   padding-right: 9px;
@@ -1783,11 +1770,6 @@ html,
 .py-\[4px\]{
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-4{
@@ -1856,6 +1838,10 @@ html,
 
 .text-center{
   text-align: center;
+}
+
+.text-end{
+  text-align: end;
 }
 
 .text-2xl{
@@ -2410,6 +2396,14 @@ html,
     width: 100%;
   }
 
+  .md\:max-w-lg{
+    max-width: 32rem;
+  }
+
+  .md\:max-w-md{
+    max-width: 28rem;
+  }
+
   .md\:flex-1{
     flex: 1 1 0%;
   }
@@ -2467,6 +2461,16 @@ html,
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+
+  .md\:text-black{
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   }
 }
 
