@@ -1840,10 +1840,6 @@ html,
   text-align: center;
 }
 
-.text-end{
-  text-align: end;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2396,10 +2392,6 @@ html,
     width: 100%;
   }
 
-  .md\:max-w-lg{
-    max-width: 32rem;
-  }
-
   .md\:max-w-md{
     max-width: 28rem;
   }
@@ -2461,11 +2453,6 @@ html,
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .md\:text-white{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 
   .md\:text-black{
